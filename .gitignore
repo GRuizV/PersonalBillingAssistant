@@ -1,0 +1,16 @@
+# Misc Files
+routes.txt
+Nima_Cloud_Document_Map.md
+
+# data folders (for inner testing)
+*data/
+
+# Environmental Variables & venv
+*pba_venv/
+.env
+
+# Sensitive Info
+experiments/Data Extraction/Manual Extraction/Test PDFs/
+
+# __pycached__/
+*__pycache__/
