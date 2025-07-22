@@ -3,7 +3,7 @@ routes.txt
 Nima_Cloud_Document_Map.md
 
 # data folders (for inner testing)
-*data/
+...
 
 # Environmental Variables & venv
 *pba_venv/
@@ -11,6 +11,7 @@ Nima_Cloud_Document_Map.md
 
 # Sensitive Info
 experiments/Data Extraction/Manual Extraction/Test PDFs/
+data/input_pdfs
 
 # __pycached__/
 *__pycache__/

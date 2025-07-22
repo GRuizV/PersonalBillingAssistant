@@ -20,7 +20,7 @@
 
 #### Tasks
 - [x] Implement `src/ingestion/upload_to_s3.py`
-- [ ] Implement `src/textract/trigger_textract.py`
+- [x] Implement `src/textract/trigger_textract.py`
 - [ ] Build `src/textract/parse_textract_output.py`
 - [ ] Write transformer: `src/core/extract_expenses.py` to select and clean the relevant tables
 - [ ] Implement DB insert logic in `src/db/store_expenses.py`

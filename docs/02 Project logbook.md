@@ -59,4 +59,21 @@ This log tracks findings, decisions, and technical reasoning made throughout the
 - Confirmed WhatsApp + LLM interface as end-user layer (no frontend)
 - Documented LLM expectations and interaction patterns in `PROJECT_OVERVIEW.md`
 
+
+### 📅 [2025-07-22] – Switched to Async Textract API for PDF Compatibility
+
+**Context:**  
+Encountered `UnsupportedDocumentException` when calling `analyze_document()` on PDF files stored in S3.
+
+**Investigation Outcome:**  
+- AWS Textract requires the **async API (`start_document_analysis`)** for PDFs and TIFFs in S3.
+- The synchronous `analyze_document()` only works with images (JPEG, PNG) passed via byte streams.
+- The same document succeeded via AWS Console, confirming the format was valid.
+
+**Action Taken:**  
+- Rewrote `trigger_textract.py` to use the async API.
+- Implemented polling loop with `get_document_analysis()`.
+- Problem resolved and raw Textract output now retrieved as JSON.
+
+
 ---
