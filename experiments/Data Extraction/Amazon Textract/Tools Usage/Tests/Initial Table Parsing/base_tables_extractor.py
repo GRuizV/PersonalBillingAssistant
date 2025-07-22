@@ -13,7 +13,7 @@ def pdf_extract():
     # json_path = Path(r"C:\Users\USUARIO\OneDrive\Nima Cloud\02 Desarrollo de Producto\PBA\POCs\Extraccion de Data\Amazon Textract\Tools Usage\AV - VS - 03 - MAR-2025\Tables\analyzeDocResponse.json")
     
     # BANCOLOMBIA
-    json_path = Path(r"C:\Users\USUARIO\OneDrive\Nima Cloud\02 Desarrollo de Producto\PBA\POCs\Extraccion de Data\Amazon Textract\Tools Usage\BC - MC - 01 - ENE-2025\Tables\analyzeDocResponse.json")
+    json_path = Path(r"C:\Users\USUARIO\OneDrive\Nima Cloud\02 Desarrollo de Producto\PBA\data\textract_output\2025-07-22_1035_cb23bdf6_BC - MC - 02 - FEB-2025.pdf.json")
     
     with open(json_path, "r", encoding="utf-8") as file:
         textract_data = json.load(file)

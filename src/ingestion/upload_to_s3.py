@@ -3,7 +3,6 @@ import os
 import uuid
 from datetime import datetime
 
-
 # Local Imports
 ...
 
@@ -31,6 +30,8 @@ s3 = boto3.client(
     region_name=AWS_REGION
 )
 
+
+# Main function
 def upload_file(file_path: str, s3_key: str = None) -> str:
 
     """
