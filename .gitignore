@@ -14,3 +14,7 @@ experiments/Data Extraction/Manual Extraction/Test PDFs/
 
 # __pycached__/
 *__pycache__/
+
+
+# Other
+*.vscode/
