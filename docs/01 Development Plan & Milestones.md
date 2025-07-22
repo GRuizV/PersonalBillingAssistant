@@ -19,7 +19,7 @@
 ### Objective: Upload → Textract → Parse → Store
 
 #### Tasks
-- [ ] Implement `src/ingestion/upload_to_s3.py`
+- [x] Implement `src/ingestion/upload_to_s3.py`
 - [ ] Implement `src/textract/trigger_textract.py`
 - [ ] Build `src/textract/parse_textract_output.py`
 - [ ] Write transformer: `src/core/extract_expenses.py` to select and clean the relevant tables
