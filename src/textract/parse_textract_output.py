@@ -30,8 +30,6 @@ def parse_textract_tables(textract_json: dict) -> list:
 
         if block["BlockType"] == "TABLE":
             
-            table = []  # Really necessary?*
-            
             # Collect all CELL blocks related to this TABLE
             cell_ids = []
 
