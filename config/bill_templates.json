@@ -1,0 +1,40 @@
+{
+  "bill_templates": {
+    
+    "bancolombia_v1": {
+      "headers": [
+        "Número de Autorización",
+        "Fecha de Transacción",
+        "Descripción",
+        "Valor Original",
+        "Tasa Pactada",
+        "Tasa EA Facturada",
+        "Cargos y Abonos",
+        "Saldo a Diferir",
+        "Cuotas"
+      ],
+      "fields_to_extract": [
+        "Número de Autorización",
+        "Fecha de Transacción",
+        "Descripción",
+        "Valor Original",
+        "Cargos y Abonos",
+        "Saldo a Diferir",
+        "Cuotas"
+      ],
+      "currency_split": {
+        "foreign": {
+          "Tasa Pactada": "!=0",
+          "Tasa EA Facturada": "!=0"
+        },
+        "domestic": {
+          "Tasa Pactada": "0",
+          "Tasa EA Facturada": "0"
+        }
+      },
+      "exclude_descriptions": [
+        "ABONO SUCURSAL VIRTUAL"
+      ]
+    }
+  }
+}
