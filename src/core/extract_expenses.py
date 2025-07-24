@@ -31,12 +31,6 @@ def parse_amount(value: str) -> float:
     except ValueError:
         return 0.0
 
-def parse_int(value: str) -> int:
-    try:
-        return int(re.sub(r"[^\d]", "", str(value))) if value else 0
-    except ValueError:
-        return 0
-
 def parse_date(value: str) -> str:
     for fmt in ("%d/%m/%Y", "%d-%m-%Y", "%Y-%m-%d", "%d/%m/%y"):
         try:
