@@ -21,8 +21,8 @@
 #### Tasks
 - [x] Implement `src/ingestion/upload_to_s3.py`
 - [x] Implement `src/textract/trigger_textract.py`
-- [ ] Build `src/textract/parse_textract_output.py`
-- [ ] Write transformer: `src/core/extract_expenses.py` to select and clean the relevant tables
+- [x] Build `src/textract/parse_textract_output.py`
+- [x] Write transformer: `src/core/extract_expenses.py` to select and clean the relevant tables - **Testing Pending!**
 - [ ] Implement DB insert logic in `src/db/store_expenses.py`
 - [ ] Build orchestration script: `main_extract_and_store.py`
 

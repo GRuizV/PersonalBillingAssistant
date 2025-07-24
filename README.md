@@ -44,9 +44,9 @@ We are currently working on:
 ### 🧩 Phase 1: Core Pipeline (WIP)
 - Upload PDF to S3 [`upload_to_s3.py`] ✅
 - Trigger Textract on uploaded files [`trigger_textract.py`] ✅
-- Parse JSON output to extract expense tables 🔜
-- Transform and clean expense records
-- Store in PostgreSQL
+- Parse JSON output to extract expense tables ✅
+- Transform and clean expense records ⚠️​ **On Tests!**
+- Store in PostgreSQL 🔜
 - Run orchestrator script end-to-end
 - Validate against ground truth for 3 known PDFs
 
