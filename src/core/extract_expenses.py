@@ -13,11 +13,17 @@ CONFIG_PATH = os.path.join(os.path.dirname(__file__), "../../config/bill_templat
 
 # --- Auxiliar Functions ---
 def load_template(template_name: str) -> dict:
+
+    """Loads 'bill_templates.json' that contains the configuration for a specific Card-Issuer/Bill-Template"""
+
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         templates = json.load(f)
     return templates["bill_templates"][template_name]
 
 def normalize_value(value: str) -> str:
+
+    """Strips string fields collected from trailing or leading whitespaces."""
+
     return value.strip() if isinstance(value, str) else value
 
 def parse_amount(value: str) -> float:
@@ -32,6 +38,9 @@ def parse_amount(value: str) -> float:
         return 0.0
 
 def parse_date(value: str) -> str:
+    
+    """Transforms the date format into a "%Y-%m-%d" strftime"""
+
     for fmt in ("%d/%m/%Y", "%d-%m-%Y", "%Y-%m-%d", "%d/%m/%y"):
         try:
             return datetime.strptime(value.strip(), fmt).strftime("%Y-%m-%d")
@@ -40,16 +49,20 @@ def parse_date(value: str) -> str:
     return value.strip()
 
 def header_matches(expected: list, actual: list) -> bool:
+
     """Check if actual table header contains all expected headers in order."""
+
     normalized_actual = [normalize_value(h).lower() for h in actual]
     normalized_expected = [h.lower() for h in expected]
     return all(h in normalized_actual for h in normalized_expected)
 
 def classify_currency(table: list, template: dict) -> str:
+
     """
     Determine if table is foreign or domestic based on template currency_split rules.
     Scans rows until one matches criteria, then classifies table.
     """
+
     header = table[0]
     index_map = {h.lower(): idx for idx, h in enumerate(header)}
 
@@ -80,7 +93,7 @@ def classify_currency(table: list, template: dict) -> str:
 def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -> dict:
 
     """
-    Extract normalized expense rows from parsed tables based on template.
+    Main Function. Extract normalized expense rows from parsed tables based on template.
     Returns dict with keys 'usd_expenses' and 'cop_expenses'.
     """
 
