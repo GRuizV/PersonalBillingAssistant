@@ -112,3 +112,34 @@ However:
 - Although installments could be converted into pending counts (`"1/1" → 0 pending"`, `"2/5" → 3 pending"`), they are kept as raw strings for now to preserve full reporting context.
 
 ---
+
+### 📅 [2025-07-28] – Standardized Output Keys and Date Format
+
+**Context:**  
+The extracted data from credit card bills contained:
+- Headers with accented characters and spaces (e.g., `"Número de Autorización"`)
+- Dates formatted according to issuer locale (`dd/mm/yyyy`)
+
+These could create interoperability issues for database storage, APIs, and downstream systems.
+Additionally, the project’s codebase and documentation are already in English, and this project 
+is planned for open-source release, where English is the industry norm.
+
+**Action Taken:**  
+- Modified `bill_templates.json` to explicitly define field mappings:
+  - `"original"` → `"english"` (e.g., `"Número de Autorización"` → `"authorization_number"`).
+- Updated `extract_expenses_from_tables()` to output records with **English, snake_case** keys.
+- Preserved date normalization (`dd/mm/yyyy` → ISO-8601 `yyyy-mm-dd`) to ensure:
+  - Unambiguous, consistent date representation
+  - Compatibility with SQL databases and external APIs
+- Updated function documentation to reflect these changes.
+
+**Impact:**  
+- Output now consistently uses **English, ASCII, snake_case keys** 
+  (`authorization_number`, `transaction_date`, `description`, etc.).
+- Dates are stored in **ISO-8601** format (`yyyy-mm-dd`), ready for database DATE/TIMESTAMP fields.
+- Simplifies integration with databases, APIs, and future multilingual issuers.
+- Original PDF headers are still used internally for table detection and template matching.
+
+**Next Steps:**  
+- Update downstream modules (DB insert, reporting) to expect English safe-case keys and ISO dates.
+- Add Pytest tests to validate correct field mapping and date normalization behavior.

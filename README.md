@@ -69,19 +69,32 @@ LLMs will handle:
 
 ## 📁 Repo Structure
 
-    src/
-    ├── ingestion/ # Upload to S3
-    ├── textract/ # Textract trigger + parser
-    ├── core/ # Transformers, report logic
-    ├── db/ # DB schema and insert logic
-    ├── notifications/ # WhatsApp integrations (later)
-    ├── llm_interface/ # Prompting and question handling
-    data/
-    ├── input_pdfs/ # Sample PDF bills
-    ├── ground_truth.json # Manual extractions
-    docs/
-    tests/
-    experiments/
+    📁 PBA/
+    ├── 📁 config
+    │   └── 📄 bill_templates.json
+    ├── 📁 data
+    │   └── 📁 textract_output
+    ├── 📁 docs
+    │   ├── 📄 00 Project Overview.md
+    │   ├── 📄 01 Development Plan & Milestones.md
+    │   ├── 📄 02 Project logbook.md
+    │   ├── 📁 architecture
+    │   │   ├── 📄 2025.07.17 - Architecture Diagram.drawio.xml
+    │   │   ├── 📄 2025.07.18 - Architecture Diagram.PNG
+    │   │   └── 📁 preliminar files
+    │   └── 📁 context_maintenance
+    ├── 📁 experiments
+    │   └── "Old experiments from the early stages of the project"
+    ├── 📄 requirements.txt
+    ├── 📁 src
+    │   ├── 📁 core
+    │   ├── 📁 db
+    │   ├── 📁 ingestion
+    │   ├── 📁 llm_interference
+    │   ├── 📁 notifications
+    │   └── 📁 textract
+    └── 📁 tests
+        └── 📁 extraction_testing_data
 
 
 ## ⚙️ Tech Stack

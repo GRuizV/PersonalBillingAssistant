@@ -92,6 +92,14 @@
 
 ---
 
+## 📑​ Open Decisions
+
+- [Pending] Textract JSON retention policy → awaiting stakeholder input (meeting 2025-07-29)
+
+
+---
+
+
 ## 🗃️ Appendix
 
 - 📁 Ground truth: `data/ground_truth.json`, `ground truth total.md`
