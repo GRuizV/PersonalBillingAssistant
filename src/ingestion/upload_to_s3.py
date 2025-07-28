@@ -45,10 +45,11 @@ def upload_file(file_path: str, s3_key: str = None) -> str:
         str: S3 object key used.
     """
 
+    basename = os.path.basename(file_path)
+
     if not s3_key:
 
-        # Generate a key like: uploads/2025-07-21_1630_<UUID>.pdf
-        basename = os.path.basename(file_path)
+        # Generate a key like: uploads/2025-07-21_1630_<UUID>.pdf        
         date_prefix = datetime.now().strftime("%Y-%m-%d_%H%M")
         unique_id = str(uuid.uuid4())[:8]  # shorter UUID
         s3_key = f"uploads/{date_prefix}_{unique_id}_{basename}"
