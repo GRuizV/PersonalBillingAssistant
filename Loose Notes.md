@@ -9,8 +9,7 @@ _Up for discussion_
 
 
 ## Clear pendings
-- Update the README for the context maintenance system.
-- Move everything to pytesting.
+- Move everything to pytesting. → After Phase 1 is finished.
 
 ---
 
