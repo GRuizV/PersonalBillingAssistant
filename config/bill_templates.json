@@ -14,13 +14,13 @@
         "Cuotas"
       ],
       "fields_to_extract": [
-        "Número de Autorización",
-        "Fecha de Transacción",
-        "Descripción",
-        "Valor Original",
-        "Cargos y Abonos",
-        "Saldo a Diferir",
-        "Cuotas"
+        { "original": "Número de Autorización", "english": "authorization_number" },
+        { "original": "Fecha de Transacción", "english": "transaction_date" },
+        { "original": "Descripción", "english": "description" },
+        { "original": "Valor Original", "english": "original_amount" },
+        { "original": "Cargos y Abonos", "english": "charges_and_credits" },
+        { "original": "Saldo a Diferir", "english": "deferred_balance" },
+        { "original": "Cuotas", "english": "installments" }
       ],
       "currency_split": {
         "foreign": {

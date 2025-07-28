@@ -39,7 +39,7 @@ def parse_amount(value: str) -> float:
 
 def parse_date(value: str) -> str:
     
-    """Transforms the date format into a "%Y-%m-%d" strftime"""
+    """Transforms the date format into ISO-8601 '%Y-%m-%d'"""
 
     for fmt in ("%d/%m/%Y", "%d-%m-%Y", "%Y-%m-%d", "%d/%m/%y"):
         try:
@@ -93,14 +93,33 @@ def classify_currency(table: list, template: dict) -> str:
 def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -> dict:
 
     """
-    Main Function. Extract normalized expense rows from parsed tables based on template.
-    Returns dict with keys 'usd_expenses' and 'cop_expenses'.
+    Extract normalized expense rows from parsed tables based on template.
+
+        Processing steps:
+        - Uses template field mapping from bill_templates.json
+        (maps PDF header names in Spanish → standardized English field names)
+
+        - Output record keys use **English, snake_case field names** defined in template mapping
+        (e.g., "Número de Autorización" → "authorization_number")
+
+        - Values are normalized:
+            * Dates → ISO-8601 (%Y-%m-%d)
+            * Numeric amounts → float (negative values preserved)
+            * Text → stripped of leading/trailing whitespace
+            
+        - Payment rows explicitly excluded based on template rules.
+
+        Returns:
+            dict: {
+                "usd_expenses": [ {<english_safe_keys>}, ...],
+                "cop_expenses": [ {<english_safe_keys>}, ...]
+            }
     """
 
     # Variables setting
     template = load_template(template_name)
     expected_headers = template["headers"]
-    fields_to_extract = template["fields_to_extract"]
+    field_mappings = template["fields_to_extract"]  # list of dicts
     exclude_descriptions = [d.upper() for d in template.get("exclude_descriptions", [])]
 
     
@@ -112,7 +131,6 @@ def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -
         # Tables of interest guards
         if not table or len(table) < 2:
             continue
-
         if not header_matches(expected_headers, table[0]):
             continue
 
@@ -141,19 +159,21 @@ def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -
             record = {}
             
             # Record fields traversing
-            for field in fields_to_extract:
+            for mapping in field_mappings:
 
-                col_idx = index_map.get(field.lower())
+                original_field = mapping["original"]
+                english = mapping["english"]
+                col_idx = index_map.get(original_field.lower())
                 value = normalize_value(row[col_idx]) if col_idx is not None and col_idx < len(row) else ""
 
-                if "fecha" in field.lower():
-                    record[field] = parse_date(value)
+                if "fecha" in original_field.lower():
+                    record[english] = parse_date(value)
 
-                elif field.lower() in ["cargos y abonos", "saldo a diferir", "valor original"]:
-                    record[field] = parse_amount(value)
+                elif original_field.lower() in ["cargos y abonos", "saldo a diferir", "valor original"]:
+                    record[english] = parse_amount(value)
 
                 else:
-                    record[field] = value
+                    record[english] = value
 
             expenses[bucket].append(record)
 

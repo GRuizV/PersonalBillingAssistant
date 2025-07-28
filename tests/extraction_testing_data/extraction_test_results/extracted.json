@@ -1,807 +1,807 @@
 {
   "usd_expenses": [
     {
-      "Número de Autorización": "T05372",
-      "Fecha de Transacción": "2025-02-25",
-      "Descripción": "APPLE.COM/BILL VR MONEDA ORIG 27800.0 USA",
-      "Valor Original": 6.82,
-      "Cargos y Abonos": 0.19,
-      "Saldo a Diferir": 6.63,
-      "Cuotas": "1/36"
+      "authorization_number": "T05372",
+      "transaction_date": "2025-02-25",
+      "description": "APPLE.COM/BILL VR MONEDA ORIG 27800.0 USA",
+      "original_amount": 6.82,
+      "charges_and_credits": 0.19,
+      "deferred_balance": 6.63,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T06950",
-      "Fecha de Transacción": "2025-02-23",
-      "Descripción": "APPLE.COM/BILL VR MONEDA ORIG 61400.0 USA",
-      "Valor Original": 15.06,
-      "Cargos y Abonos": 0.42,
-      "Saldo a Diferir": 14.64,
-      "Cuotas": "1/36"
+      "authorization_number": "T06950",
+      "transaction_date": "2025-02-23",
+      "description": "APPLE.COM/BILL VR MONEDA ORIG 61400.0 USA",
+      "original_amount": 15.06,
+      "charges_and_credits": 0.42,
+      "deferred_balance": 14.64,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T09849",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "APPLE.COM/BILL VR MONEDA ORIG 28900.0 USA",
-      "Valor Original": 7.05,
-      "Cargos y Abonos": 0.2,
-      "Saldo a Diferir": 6.85,
-      "Cuotas": "1/36"
+      "authorization_number": "T09849",
+      "transaction_date": "2025-02-22",
+      "description": "APPLE.COM/BILL VR MONEDA ORIG 28900.0 USA",
+      "original_amount": 7.05,
+      "charges_and_credits": 0.2,
+      "deferred_balance": 6.85,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T09072",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "APPLE.COM/BILL VR MONEDA ORIG 54500.0 USA",
-      "Valor Original": 13.36,
-      "Cargos y Abonos": 0.37,
-      "Saldo a Diferir": 12.99,
-      "Cuotas": "1/36"
+      "authorization_number": "T09072",
+      "transaction_date": "2025-02-22",
+      "description": "APPLE.COM/BILL VR MONEDA ORIG 54500.0 USA",
+      "original_amount": 13.36,
+      "charges_and_credits": 0.37,
+      "deferred_balance": 12.99,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T03350",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "Nintendo CA1361206913",
-      "Valor Original": 3.74,
-      "Cargos y Abonos": 0.1,
-      "Saldo a Diferir": 3.64,
-      "Cuotas": "1/36"
+      "authorization_number": "T03350",
+      "transaction_date": "2025-02-22",
+      "description": "Nintendo CA1361206913",
+      "original_amount": 3.74,
+      "charges_and_credits": 0.1,
+      "deferred_balance": 3.64,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T03633",
-      "Fecha de Transacción": "2025-02-19",
-      "Descripción": "APPLE.COM/BILL VR MONEDA ORIG 44900.0 USA",
-      "Valor Original": 10.95,
-      "Cargos y Abonos": 0.3,
-      "Saldo a Diferir": 10.65,
-      "Cuotas": "1/36"
+      "authorization_number": "T03633",
+      "transaction_date": "2025-02-19",
+      "description": "APPLE.COM/BILL VR MONEDA ORIG 44900.0 USA",
+      "original_amount": 10.95,
+      "charges_and_credits": 0.3,
+      "deferred_balance": 10.65,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T00212",
-      "Fecha de Transacción": "2025-02-19",
-      "Descripción": "APPLE.COM/BILL VR MONEDA ORIG 29900.0 USA",
-      "Valor Original": 7.29,
-      "Cargos y Abonos": 0.2,
-      "Saldo a Diferir": 7.09,
-      "Cuotas": "1/36"
+      "authorization_number": "T00212",
+      "transaction_date": "2025-02-19",
+      "description": "APPLE.COM/BILL VR MONEDA ORIG 29900.0 USA",
+      "original_amount": 7.29,
+      "charges_and_credits": 0.2,
+      "deferred_balance": 7.09,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R04404",
-      "Fecha de Transacción": "2025-02-14",
-      "Descripción": "Dlocal *UBER RIDES VR MONEDA ORIG 31809.0 MLT",
-      "Valor Original": 7.64,
-      "Cargos y Abonos": 0.21,
-      "Saldo a Diferir": 7.43,
-      "Cuotas": "1/36"
+      "authorization_number": "R04404",
+      "transaction_date": "2025-02-14",
+      "description": "Dlocal *UBER RIDES VR MONEDA ORIG 31809.0 MLT",
+      "original_amount": 7.64,
+      "charges_and_credits": 0.21,
+      "deferred_balance": 7.43,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R02609",
-      "Fecha de Transacción": "2025-02-14",
-      "Descripción": "AMAZON MKTPL*7116O2OJ3",
-      "Valor Original": 79.99,
-      "Cargos y Abonos": 2.22,
-      "Saldo a Diferir": 77.77,
-      "Cuotas": "1/36"
+      "authorization_number": "R02609",
+      "transaction_date": "2025-02-14",
+      "description": "AMAZON MKTPL*7116O2OJ3",
+      "original_amount": 79.99,
+      "charges_and_credits": 2.22,
+      "deferred_balance": 77.77,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R08748",
-      "Fecha de Transacción": "2025-02-14",
-      "Descripción": "OPENAI *CHATGPT SUBSCR",
-      "Valor Original": 20.0,
-      "Cargos y Abonos": 0.56,
-      "Saldo a Diferir": 19.44,
-      "Cuotas": "1/36"
+      "authorization_number": "R08748",
+      "transaction_date": "2025-02-14",
+      "description": "OPENAI *CHATGPT SUBSCR",
+      "original_amount": 20.0,
+      "charges_and_credits": 0.56,
+      "deferred_balance": 19.44,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R09375",
-      "Fecha de Transacción": "2025-02-10",
-      "Descripción": "SPLICE.COM* SOUNDS 100",
-      "Valor Original": 12.99,
-      "Cargos y Abonos": 0.36,
-      "Saldo a Diferir": 12.63,
-      "Cuotas": "1/36"
+      "authorization_number": "R09375",
+      "transaction_date": "2025-02-10",
+      "description": "SPLICE.COM* SOUNDS 100",
+      "original_amount": 12.99,
+      "charges_and_credits": 0.36,
+      "deferred_balance": 12.63,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R06526",
-      "Fecha de Transacción": "2025-02-09",
-      "Descripción": "Disney PLUS VR MONEDA ORIG 23450.0 USA",
-      "Valor Original": 5.65,
-      "Cargos y Abonos": 0.16,
-      "Saldo a Diferir": 5.49,
-      "Cuotas": "1/36"
+      "authorization_number": "R06526",
+      "transaction_date": "2025-02-09",
+      "description": "Disney PLUS VR MONEDA ORIG 23450.0 USA",
+      "original_amount": 5.65,
+      "charges_and_credits": 0.16,
+      "deferred_balance": 5.49,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R05406",
-      "Fecha de Transacción": "2025-02-09",
-      "Descripción": "DISNEY DTC LATAM INC. VR MONEDA ORIG 46900.0 USA",
-      "Valor Original": 11.3,
-      "Cargos y Abonos": 0.31,
-      "Saldo a Diferir": 10.99,
-      "Cuotas": "1/36"
+      "authorization_number": "R05406",
+      "transaction_date": "2025-02-09",
+      "description": "DISNEY DTC LATAM INC. VR MONEDA ORIG 46900.0 USA",
+      "original_amount": 11.3,
+      "charges_and_credits": 0.31,
+      "deferred_balance": 10.99,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R03502",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "NADEL",
-      "Valor Original": 1.0,
-      "Cargos y Abonos": 0.03,
-      "Saldo a Diferir": 0.97,
-      "Cuotas": "1/36"
+      "authorization_number": "R03502",
+      "transaction_date": "2025-02-07",
+      "description": "NADEL",
+      "original_amount": 1.0,
+      "charges_and_credits": 0.03,
+      "deferred_balance": 0.97,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T05964",
-      "Fecha de Transacción": "2025-02-06",
-      "Descripción": "Scribd Inc *496589665",
-      "Valor Original": 10.7,
-      "Cargos y Abonos": 0.3,
-      "Saldo a Diferir": 10.4,
-      "Cuotas": "1/36"
+      "authorization_number": "T05964",
+      "transaction_date": "2025-02-06",
+      "description": "Scribd Inc *496589665",
+      "original_amount": 10.7,
+      "charges_and_credits": 0.3,
+      "deferred_balance": 10.4,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T01736",
-      "Fecha de Transacción": "2025-02-05",
-      "Descripción": "APPLE.COM/BILL VR MONEDA ORIG 15900.0 USA",
-      "Valor Original": 3.79,
-      "Cargos y Abonos": 0.11,
-      "Saldo a Diferir": 3.68,
-      "Cuotas": "1/36"
+      "authorization_number": "T01736",
+      "transaction_date": "2025-02-05",
+      "description": "APPLE.COM/BILL VR MONEDA ORIG 15900.0 USA",
+      "original_amount": 3.79,
+      "charges_and_credits": 0.11,
+      "deferred_balance": 3.68,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T07880",
-      "Fecha de Transacción": "2025-02-05",
-      "Descripción": "APPLE.COM BILL VR MONEDA ORIG 124900.0 USA",
-      "Valor Original": 29.75,
-      "Cargos y Abonos": 0.83,
-      "Saldo a Diferir": 28.92,
-      "Cuotas": "1/36"
+      "authorization_number": "T07880",
+      "transaction_date": "2025-02-05",
+      "description": "APPLE.COM BILL VR MONEDA ORIG 124900.0 USA",
+      "original_amount": 29.75,
+      "charges_and_credits": 0.83,
+      "deferred_balance": 28.92,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "T00259",
-      "Fecha de Transacción": "2025-02-04",
-      "Descripción": "Nintendo CA1351525990",
-      "Valor Original": 19.99,
-      "Cargos y Abonos": 0.56,
-      "Saldo a Diferir": 19.43,
-      "Cuotas": "1/36"
+      "authorization_number": "T00259",
+      "transaction_date": "2025-02-04",
+      "description": "Nintendo CA1351525990",
+      "original_amount": 19.99,
+      "charges_and_credits": 0.56,
+      "deferred_balance": 19.43,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R00562",
-      "Fecha de Transacción": "2025-02-04",
-      "Descripción": "NEBULA SUBSCRIPTION",
-      "Valor Original": 6.0,
-      "Cargos y Abonos": 0.17,
-      "Saldo a Diferir": 5.83,
-      "Cuotas": "1/36"
+      "authorization_number": "R00562",
+      "transaction_date": "2025-02-04",
+      "description": "NEBULA SUBSCRIPTION",
+      "original_amount": 6.0,
+      "charges_and_credits": 0.17,
+      "deferred_balance": 5.83,
+      "installments": "1/36"
     },
     {
-      "Número de Autorización": "R07628",
-      "Fecha de Transacción": "2025-02-03",
-      "Descripción": "AMAZON MKTPL*N55XV0773",
-      "Valor Original": 86.9,
-      "Cargos y Abonos": 2.41,
-      "Saldo a Diferir": 84.22,
-      "Cuotas": "1/36"
+      "authorization_number": "R07628",
+      "transaction_date": "2025-02-03",
+      "description": "AMAZON MKTPL*N55XV0773",
+      "original_amount": 86.9,
+      "charges_and_credits": 2.41,
+      "deferred_balance": 84.22,
+      "installments": "1/36"
     }
   ],
   "cop_expenses": [
     {
-      "Número de Autorización": "",
-      "Fecha de Transacción": "2025-02-28",
-      "Descripción": "INTERESES CORRIENTES",
-      "Valor Original": 6598.04,
-      "Cargos y Abonos": 6598.04,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": ""
-    },
-    {
-      "Número de Autorización": "000000",
-      "Fecha de Transacción": "2025-02-28",
-      "Descripción": "CUOTA DE MANEJO",
-      "Valor Original": 48490.0,
-      "Cargos y Abonos": 48490.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": ""
-    },
-    {
-      "Número de Autorización": "T04877",
-      "Fecha de Transacción": "2025-02-27",
-      "Descripción": "DLO*Spotify",
-      "Valor Original": 26400.0,
-      "Cargos y Abonos": 26400.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R01915",
-      "Fecha de Transacción": "2025-02-25",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 29492.0,
-      "Cargos y Abonos": 29492.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R08071",
-      "Fecha de Transacción": "2025-02-25",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 29555.0,
-      "Cargos y Abonos": 29555.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R04507",
-      "Fecha de Transacción": "2025-02-25",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 30203.0,
-      "Cargos y Abonos": 30203.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "H07367",
-      "Fecha de Transacción": "2025-02-25",
-      "Descripción": "SANTA MARTA MARRIOT RE",
-      "Valor Original": 947722.0,
-      "Cargos y Abonos": 947722.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "H06043",
-      "Fecha de Transacción": "2025-02-25",
-      "Descripción": "SANTA MARTA MARRIOT RE",
-      "Valor Original": 272055.0,
-      "Cargos y Abonos": 272055.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "000000",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "COMISION AVANCE CAJERO",
-      "Valor Original": 7460.0,
-      "Cargos y Abonos": 7460.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": ""
-    },
-    {
-      "Número de Autorización": "R06381",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 10774.0,
-      "Cargos y Abonos": 10774.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R07715",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 9610.0,
-      "Cargos y Abonos": 9610.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R00697",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 29563.0,
-      "Cargos y Abonos": 29563.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F07063",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "SAMARIAN CO SAS",
-      "Valor Original": 209778.0,
-      "Cargos y Abonos": 209778.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R06018",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "INGLESA 300",
-      "Valor Original": 68900.0,
-      "Cargos y Abonos": 68900.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R00770",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "COMCEL PAGO DE FACTURA",
-      "Valor Original": 208578.0,
-      "Cargos y Abonos": 208578.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "X07118",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "LATAM AIRLINES COLOMBI",
-      "Valor Original": 91900.0,
-      "Cargos y Abonos": 91900.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F04982",
-      "Fecha de Transacción": "2025-02-24",
-      "Descripción": "LULO CAFE BAR",
-      "Valor Original": 120230.0,
-      "Cargos y Abonos": 120230.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F05289",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "GUASIMO RESTAURANTE SA",
-      "Valor Original": 346352.0,
-      "Cargos y Abonos": 346352.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R02869",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 29573.0,
-      "Cargos y Abonos": 29573.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "H06921",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "SANTA MARTA MARRIOT RE",
-      "Valor Original": 1144404.0,
-      "Cargos y Abonos": 1144404.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R04902",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "ANANDA TALLER DULCE 11",
-      "Valor Original": 49500.0,
-      "Cargos y Abonos": 49500.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "H08960",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "SANTA MARTA MARRIOT RE",
-      "Valor Original": 90685.0,
-      "Cargos y Abonos": 90685.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "Z06486",
-      "Fecha de Transacción": "2025-02-22",
-      "Descripción": "AVANCE CAJERO BANCOLOMBIA",
-      "Valor Original": 500000.0,
-      "Cargos y Abonos": 20833.33,
-      "Saldo a Diferir": 479166.67,
-      "Cuotas": "1/24"
-    },
-    {
-      "Número de Autorización": "R04852",
-      "Fecha de Transacción": "2025-02-19",
-      "Descripción": "CDA CAPRI",
-      "Valor Original": 302673.0,
-      "Cargos y Abonos": 302673.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R00807",
-      "Fecha de Transacción": "2025-02-18",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 261316.0,
-      "Cargos y Abonos": 261316.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "U03368",
-      "Fecha de Transacción": "2025-02-18",
-      "Descripción": "CTRO DIAGNOST AUTOM VA",
-      "Valor Original": 644130.0,
-      "Cargos y Abonos": 644130.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R00078",
-      "Fecha de Transacción": "2025-02-16",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 121150.0,
-      "Cargos y Abonos": 121150.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R02687",
-      "Fecha de Transacción": "2025-02-16",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 17250.0,
-      "Cargos y Abonos": 17250.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R00958",
-      "Fecha de Transacción": "2025-02-15",
-      "Descripción": "CARULLA TRADE CENTER",
-      "Valor Original": 69754.0,
-      "Cargos y Abonos": 69754.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R00214",
-      "Fecha de Transacción": "2025-02-15",
-      "Descripción": "RAPPI*RAPPI COLOMBIA",
-      "Valor Original": 135200.0,
-      "Cargos y Abonos": 135200.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R03326",
-      "Fecha de Transacción": "2025-02-14",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 25216.0,
-      "Cargos y Abonos": 25216.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R01654",
-      "Fecha de Transacción": "2025-02-14",
-      "Descripción": "RAPPI*PRO COLOMBIA",
-      "Valor Original": 23490.0,
-      "Cargos y Abonos": 23490.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R08218",
-      "Fecha de Transacción": "2025-02-14",
-      "Descripción": "AMAZON.COM",
-      "Valor Original": 317687.0,
-      "Cargos y Abonos": 317687.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R09099",
-      "Fecha de Transacción": "2025-02-14",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 18950.0,
-      "Cargos y Abonos": 18950.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R09123",
-      "Fecha de Transacción": "2025-02-13",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 14400.0,
-      "Cargos y Abonos": 14400.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R09237",
-      "Fecha de Transacción": "2025-02-12",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 26651.0,
-      "Cargos y Abonos": 26651.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R08723",
-      "Fecha de Transacción": "2025-02-12",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 26762.0,
-      "Cargos y Abonos": 26762.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R02726",
-      "Fecha de Transacción": "2025-02-12",
-      "Descripción": "ADOBE",
-      "Valor Original": 333200.0,
-      "Cargos y Abonos": 333200.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R05583",
-      "Fecha de Transacción": "2025-02-11",
-      "Descripción": "MOVISTAR PAGOSEPAYCO",
-      "Valor Original": 167087.0,
-      "Cargos y Abonos": 167087.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F09183",
-      "Fecha de Transacción": "2025-02-10",
-      "Descripción": "DiDi co Food",
-      "Valor Original": 28809.0,
-      "Cargos y Abonos": 28809.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "T07215",
-      "Fecha de Transacción": "2025-02-09",
-      "Descripción": "PPRO*MICROSOFT",
-      "Valor Original": 42990.0,
-      "Cargos y Abonos": 42990.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R00970",
-      "Fecha de Transacción": "2025-02-09",
-      "Descripción": "EDS ROOSEVELT",
-      "Valor Original": 183535.0,
-      "Cargos y Abonos": 183535.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R05440",
-      "Fecha de Transacción": "2025-02-09",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 46350.0,
-      "Cargos y Abonos": 46350.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R07896",
-      "Fecha de Transacción": "2025-02-08",
-      "Descripción": "EL MOLINO LA 14 CENTEN",
-      "Valor Original": 14900.0,
-      "Cargos y Abonos": 14900.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R01686",
-      "Fecha de Transacción": "2025-02-08",
-      "Descripción": "SC CENTENARIO",
-      "Valor Original": 730793.0,
-      "Cargos y Abonos": 730793.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "000000",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "COMISION AVANCE CAJERO",
-      "Valor Original": 7460.0,
-      "Cargos y Abonos": 7460.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": ""
-    },
-    {
-      "Número de Autorización": "R03058",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "INVERSIONES TNS CHIPIC",
-      "Valor Original": 59400.0,
-      "Cargos y Abonos": 59400.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R02943",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "BOSI CHIPICHAPE N 2",
-      "Valor Original": 524900.0,
-      "Cargos y Abonos": 524900.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F07100",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "HAMBURGUESAS EL CORRAL",
-      "Valor Original": 88800.0,
-      "Cargos y Abonos": 88800.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R02775",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 12952.0,
-      "Cargos y Abonos": 12952.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R08838",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "VELEZ 5030 CHIPICHAPE",
-      "Valor Original": 329900.0,
-      "Cargos y Abonos": 329900.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F09124",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "SUSHI GREEN 4",
-      "Valor Original": 41300.0,
-      "Cargos y Abonos": 41300.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "Z03019",
-      "Fecha de Transacción": "2025-02-07",
-      "Descripción": "AVANCE CAJERO BANCOLOMBIA",
-      "Valor Original": 300000.0,
-      "Cargos y Abonos": 12500.0,
-      "Saldo a Diferir": 287500.0,
-      "Cuotas": "1/24"
-    },
-    {
-      "Número de Autorización": "F07816",
-      "Fecha de Transacción": "2025-02-06",
-      "Descripción": "DiDi co Food",
-      "Valor Original": 25105.0,
-      "Cargos y Abonos": 25105.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F00265",
-      "Fecha de Transacción": "2025-02-05",
-      "Descripción": "DiDi CO Food",
-      "Valor Original": 17670.0,
-      "Cargos y Abonos": 17670.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R01075",
-      "Fecha de Transacción": "2025-02-04",
-      "Descripción": "RAPPI*RAPPI COLOMBIA",
-      "Valor Original": 259300.0,
-      "Cargos y Abonos": 259300.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R06088",
-      "Fecha de Transacción": "2025-02-04",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 36300.0,
-      "Cargos y Abonos": 36300.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R04890",
-      "Fecha de Transacción": "2025-02-02",
-      "Descripción": "COCINA COREANA URIMURI",
-      "Valor Original": 152416.0,
-      "Cargos y Abonos": 152416.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R08076",
-      "Fecha de Transacción": "2025-02-02",
-      "Descripción": "CALATHEA",
-      "Valor Original": 34500.0,
-      "Cargos y Abonos": 34500.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F03778",
-      "Fecha de Transacción": "2025-02-01",
-      "Descripción": "BENGALA Y BANDOLERO",
-      "Valor Original": 40000.0,
-      "Cargos y Abonos": 40000.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R03434",
-      "Fecha de Transacción": "2025-02-01",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 11905.0,
-      "Cargos y Abonos": 11905.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R05755",
-      "Fecha de Transacción": "2025-02-01",
-      "Descripción": "UBER RIDES",
-      "Valor Original": 13196.0,
-      "Cargos y Abonos": 13196.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R03528",
-      "Fecha de Transacción": "2025-02-01",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 140750.0,
-      "Cargos y Abonos": 140750.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R03244",
-      "Fecha de Transacción": "2025-02-01",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 44250.0,
-      "Cargos y Abonos": 44250.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R06337",
-      "Fecha de Transacción": "2025-02-01",
-      "Descripción": "DROGUERIA NATURFARMA D",
-      "Valor Original": 6800.0,
-      "Cargos y Abonos": 6800.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F05421",
-      "Fecha de Transacción": "2025-02-01",
-      "Descripción": "DISCO BANDOLEROS S A S",
-      "Valor Original": 94600.0,
-      "Cargos y Abonos": 94600.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F09754",
-      "Fecha de Transacción": "2025-01-31",
-      "Descripción": "TAQUERIA EL BUEN PASTO",
-      "Valor Original": 103250.0,
-      "Cargos y Abonos": 103250.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "R09903",
-      "Fecha de Transacción": "2025-01-31",
-      "Descripción": "DLO*RAPPI COLOMBIA",
-      "Valor Original": 167820.0,
-      "Cargos y Abonos": 167820.0,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
-    },
-    {
-      "Número de Autorización": "F08942",
-      "Fecha de Transacción": "2025-01-30",
-      "Descripción": "DiDi co Food",
-      "Valor Original": 49127.0,
-      "Cargos y Abonos": 49126.71,
-      "Saldo a Diferir": 0.0,
-      "Cuotas": "1/1"
+      "authorization_number": "",
+      "transaction_date": "2025-02-28",
+      "description": "INTERESES CORRIENTES",
+      "original_amount": 6598.04,
+      "charges_and_credits": 6598.04,
+      "deferred_balance": 0.0,
+      "installments": ""
+    },
+    {
+      "authorization_number": "000000",
+      "transaction_date": "2025-02-28",
+      "description": "CUOTA DE MANEJO",
+      "original_amount": 48490.0,
+      "charges_and_credits": 48490.0,
+      "deferred_balance": 0.0,
+      "installments": ""
+    },
+    {
+      "authorization_number": "T04877",
+      "transaction_date": "2025-02-27",
+      "description": "DLO*Spotify",
+      "original_amount": 26400.0,
+      "charges_and_credits": 26400.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R01915",
+      "transaction_date": "2025-02-25",
+      "description": "UBER RIDES",
+      "original_amount": 29492.0,
+      "charges_and_credits": 29492.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R08071",
+      "transaction_date": "2025-02-25",
+      "description": "UBER RIDES",
+      "original_amount": 29555.0,
+      "charges_and_credits": 29555.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R04507",
+      "transaction_date": "2025-02-25",
+      "description": "UBER RIDES",
+      "original_amount": 30203.0,
+      "charges_and_credits": 30203.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "H07367",
+      "transaction_date": "2025-02-25",
+      "description": "SANTA MARTA MARRIOT RE",
+      "original_amount": 947722.0,
+      "charges_and_credits": 947722.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "H06043",
+      "transaction_date": "2025-02-25",
+      "description": "SANTA MARTA MARRIOT RE",
+      "original_amount": 272055.0,
+      "charges_and_credits": 272055.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "000000",
+      "transaction_date": "2025-02-24",
+      "description": "COMISION AVANCE CAJERO",
+      "original_amount": 7460.0,
+      "charges_and_credits": 7460.0,
+      "deferred_balance": 0.0,
+      "installments": ""
+    },
+    {
+      "authorization_number": "R06381",
+      "transaction_date": "2025-02-24",
+      "description": "UBER RIDES",
+      "original_amount": 10774.0,
+      "charges_and_credits": 10774.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R07715",
+      "transaction_date": "2025-02-24",
+      "description": "UBER RIDES",
+      "original_amount": 9610.0,
+      "charges_and_credits": 9610.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R00697",
+      "transaction_date": "2025-02-24",
+      "description": "UBER RIDES",
+      "original_amount": 29563.0,
+      "charges_and_credits": 29563.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F07063",
+      "transaction_date": "2025-02-24",
+      "description": "SAMARIAN CO SAS",
+      "original_amount": 209778.0,
+      "charges_and_credits": 209778.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R06018",
+      "transaction_date": "2025-02-24",
+      "description": "INGLESA 300",
+      "original_amount": 68900.0,
+      "charges_and_credits": 68900.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R00770",
+      "transaction_date": "2025-02-24",
+      "description": "COMCEL PAGO DE FACTURA",
+      "original_amount": 208578.0,
+      "charges_and_credits": 208578.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "X07118",
+      "transaction_date": "2025-02-24",
+      "description": "LATAM AIRLINES COLOMBI",
+      "original_amount": 91900.0,
+      "charges_and_credits": 91900.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F04982",
+      "transaction_date": "2025-02-24",
+      "description": "LULO CAFE BAR",
+      "original_amount": 120230.0,
+      "charges_and_credits": 120230.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F05289",
+      "transaction_date": "2025-02-22",
+      "description": "GUASIMO RESTAURANTE SA",
+      "original_amount": 346352.0,
+      "charges_and_credits": 346352.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R02869",
+      "transaction_date": "2025-02-22",
+      "description": "UBER RIDES",
+      "original_amount": 29573.0,
+      "charges_and_credits": 29573.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "H06921",
+      "transaction_date": "2025-02-22",
+      "description": "SANTA MARTA MARRIOT RE",
+      "original_amount": 1144404.0,
+      "charges_and_credits": 1144404.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R04902",
+      "transaction_date": "2025-02-22",
+      "description": "ANANDA TALLER DULCE 11",
+      "original_amount": 49500.0,
+      "charges_and_credits": 49500.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "H08960",
+      "transaction_date": "2025-02-22",
+      "description": "SANTA MARTA MARRIOT RE",
+      "original_amount": 90685.0,
+      "charges_and_credits": 90685.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "Z06486",
+      "transaction_date": "2025-02-22",
+      "description": "AVANCE CAJERO BANCOLOMBIA",
+      "original_amount": 500000.0,
+      "charges_and_credits": 20833.33,
+      "deferred_balance": 479166.67,
+      "installments": "1/24"
+    },
+    {
+      "authorization_number": "R04852",
+      "transaction_date": "2025-02-19",
+      "description": "CDA CAPRI",
+      "original_amount": 302673.0,
+      "charges_and_credits": 302673.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R00807",
+      "transaction_date": "2025-02-18",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 261316.0,
+      "charges_and_credits": 261316.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "U03368",
+      "transaction_date": "2025-02-18",
+      "description": "CTRO DIAGNOST AUTOM VA",
+      "original_amount": 644130.0,
+      "charges_and_credits": 644130.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R00078",
+      "transaction_date": "2025-02-16",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 121150.0,
+      "charges_and_credits": 121150.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R02687",
+      "transaction_date": "2025-02-16",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 17250.0,
+      "charges_and_credits": 17250.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R00958",
+      "transaction_date": "2025-02-15",
+      "description": "CARULLA TRADE CENTER",
+      "original_amount": 69754.0,
+      "charges_and_credits": 69754.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R00214",
+      "transaction_date": "2025-02-15",
+      "description": "RAPPI*RAPPI COLOMBIA",
+      "original_amount": 135200.0,
+      "charges_and_credits": 135200.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R03326",
+      "transaction_date": "2025-02-14",
+      "description": "UBER RIDES",
+      "original_amount": 25216.0,
+      "charges_and_credits": 25216.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R01654",
+      "transaction_date": "2025-02-14",
+      "description": "RAPPI*PRO COLOMBIA",
+      "original_amount": 23490.0,
+      "charges_and_credits": 23490.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R08218",
+      "transaction_date": "2025-02-14",
+      "description": "AMAZON.COM",
+      "original_amount": 317687.0,
+      "charges_and_credits": 317687.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R09099",
+      "transaction_date": "2025-02-14",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 18950.0,
+      "charges_and_credits": 18950.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R09123",
+      "transaction_date": "2025-02-13",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 14400.0,
+      "charges_and_credits": 14400.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R09237",
+      "transaction_date": "2025-02-12",
+      "description": "UBER RIDES",
+      "original_amount": 26651.0,
+      "charges_and_credits": 26651.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R08723",
+      "transaction_date": "2025-02-12",
+      "description": "UBER RIDES",
+      "original_amount": 26762.0,
+      "charges_and_credits": 26762.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R02726",
+      "transaction_date": "2025-02-12",
+      "description": "ADOBE",
+      "original_amount": 333200.0,
+      "charges_and_credits": 333200.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R05583",
+      "transaction_date": "2025-02-11",
+      "description": "MOVISTAR PAGOSEPAYCO",
+      "original_amount": 167087.0,
+      "charges_and_credits": 167087.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F09183",
+      "transaction_date": "2025-02-10",
+      "description": "DiDi co Food",
+      "original_amount": 28809.0,
+      "charges_and_credits": 28809.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "T07215",
+      "transaction_date": "2025-02-09",
+      "description": "PPRO*MICROSOFT",
+      "original_amount": 42990.0,
+      "charges_and_credits": 42990.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R00970",
+      "transaction_date": "2025-02-09",
+      "description": "EDS ROOSEVELT",
+      "original_amount": 183535.0,
+      "charges_and_credits": 183535.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R05440",
+      "transaction_date": "2025-02-09",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 46350.0,
+      "charges_and_credits": 46350.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R07896",
+      "transaction_date": "2025-02-08",
+      "description": "EL MOLINO LA 14 CENTEN",
+      "original_amount": 14900.0,
+      "charges_and_credits": 14900.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R01686",
+      "transaction_date": "2025-02-08",
+      "description": "SC CENTENARIO",
+      "original_amount": 730793.0,
+      "charges_and_credits": 730793.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "000000",
+      "transaction_date": "2025-02-07",
+      "description": "COMISION AVANCE CAJERO",
+      "original_amount": 7460.0,
+      "charges_and_credits": 7460.0,
+      "deferred_balance": 0.0,
+      "installments": ""
+    },
+    {
+      "authorization_number": "R03058",
+      "transaction_date": "2025-02-07",
+      "description": "INVERSIONES TNS CHIPIC",
+      "original_amount": 59400.0,
+      "charges_and_credits": 59400.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R02943",
+      "transaction_date": "2025-02-07",
+      "description": "BOSI CHIPICHAPE N 2",
+      "original_amount": 524900.0,
+      "charges_and_credits": 524900.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F07100",
+      "transaction_date": "2025-02-07",
+      "description": "HAMBURGUESAS EL CORRAL",
+      "original_amount": 88800.0,
+      "charges_and_credits": 88800.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R02775",
+      "transaction_date": "2025-02-07",
+      "description": "UBER RIDES",
+      "original_amount": 12952.0,
+      "charges_and_credits": 12952.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R08838",
+      "transaction_date": "2025-02-07",
+      "description": "VELEZ 5030 CHIPICHAPE",
+      "original_amount": 329900.0,
+      "charges_and_credits": 329900.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F09124",
+      "transaction_date": "2025-02-07",
+      "description": "SUSHI GREEN 4",
+      "original_amount": 41300.0,
+      "charges_and_credits": 41300.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "Z03019",
+      "transaction_date": "2025-02-07",
+      "description": "AVANCE CAJERO BANCOLOMBIA",
+      "original_amount": 300000.0,
+      "charges_and_credits": 12500.0,
+      "deferred_balance": 287500.0,
+      "installments": "1/24"
+    },
+    {
+      "authorization_number": "F07816",
+      "transaction_date": "2025-02-06",
+      "description": "DiDi co Food",
+      "original_amount": 25105.0,
+      "charges_and_credits": 25105.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F00265",
+      "transaction_date": "2025-02-05",
+      "description": "DiDi CO Food",
+      "original_amount": 17670.0,
+      "charges_and_credits": 17670.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R01075",
+      "transaction_date": "2025-02-04",
+      "description": "RAPPI*RAPPI COLOMBIA",
+      "original_amount": 259300.0,
+      "charges_and_credits": 259300.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R06088",
+      "transaction_date": "2025-02-04",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 36300.0,
+      "charges_and_credits": 36300.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R04890",
+      "transaction_date": "2025-02-02",
+      "description": "COCINA COREANA URIMURI",
+      "original_amount": 152416.0,
+      "charges_and_credits": 152416.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R08076",
+      "transaction_date": "2025-02-02",
+      "description": "CALATHEA",
+      "original_amount": 34500.0,
+      "charges_and_credits": 34500.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F03778",
+      "transaction_date": "2025-02-01",
+      "description": "BENGALA Y BANDOLERO",
+      "original_amount": 40000.0,
+      "charges_and_credits": 40000.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R03434",
+      "transaction_date": "2025-02-01",
+      "description": "UBER RIDES",
+      "original_amount": 11905.0,
+      "charges_and_credits": 11905.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R05755",
+      "transaction_date": "2025-02-01",
+      "description": "UBER RIDES",
+      "original_amount": 13196.0,
+      "charges_and_credits": 13196.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R03528",
+      "transaction_date": "2025-02-01",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 140750.0,
+      "charges_and_credits": 140750.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R03244",
+      "transaction_date": "2025-02-01",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 44250.0,
+      "charges_and_credits": 44250.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R06337",
+      "transaction_date": "2025-02-01",
+      "description": "DROGUERIA NATURFARMA D",
+      "original_amount": 6800.0,
+      "charges_and_credits": 6800.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F05421",
+      "transaction_date": "2025-02-01",
+      "description": "DISCO BANDOLEROS S A S",
+      "original_amount": 94600.0,
+      "charges_and_credits": 94600.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F09754",
+      "transaction_date": "2025-01-31",
+      "description": "TAQUERIA EL BUEN PASTO",
+      "original_amount": 103250.0,
+      "charges_and_credits": 103250.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "R09903",
+      "transaction_date": "2025-01-31",
+      "description": "DLO*RAPPI COLOMBIA",
+      "original_amount": 167820.0,
+      "charges_and_credits": 167820.0,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
+    },
+    {
+      "authorization_number": "F08942",
+      "transaction_date": "2025-01-30",
+      "description": "DiDi co Food",
+      "original_amount": 49127.0,
+      "charges_and_credits": 49126.71,
+      "deferred_balance": 0.0,
+      "installments": "1/1"
     }
   ]
 }
