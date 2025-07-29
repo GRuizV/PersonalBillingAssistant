@@ -143,3 +143,71 @@ is planned for open-source release, where English is the industry norm.
 **Next Steps:**  
 - Update downstream modules (DB insert, reporting) to expect English safe-case keys and ISO dates.
 - Add Pytest tests to validate correct field mapping and date normalization behavior.
+
+
+### 📅 [2025-07-29] – Unified Expense Data Model
+
+**Context:**  
+The original expense extraction output separated expenses by currency into two buckets 
+(`usd_expenses` and `cop_expenses`).  
+This design ensured currencies were not accidentally mixed when aggregating values but made 
+downstream storage and analytics more complex, particularly when integrating with 
+a relational database and preparing for LLM-based natural language queries.
+
+**Decision:**  
+* Move from two currency-specific buckets to a **unified expense list** where each record includes 
+  a `currency` field.
+* Introduce separate **bill-level metadata** to capture issuer, billing period, and upload information.
+
+New Expense Record Data Model:
+```json
+{
+  "user_id": "<user reference>",
+  "bill_id": "<bill reference>",
+  "currency": "USD" | "COP",
+  "authorization_number": "T05372",
+  "transaction_date": "2025-02-25",
+  "description": "APPLE.COM/BILL VR MONEDA ORIG 27800.0 USA",
+  "original_amount": 6.82,
+  "charges_and_credits": 0.19,
+  "deferred_balance": 6.63,
+  "installments": "1/36"
+}
+```
+
+Bill Metadata:
+```json
+{
+  "bill_id": "<bill reference>",
+  "user_id": "<user reference>",
+  "issuer": "Bancolombia",
+  "period_start": "2025-02-01",
+  "period_end": "2025-02-28",
+  "upload_date": "2025-03-05T10:15:00"
+}
+```
+
+**Rationale:**
+* Simplifies database schema (single expenses table instead of one table per currency).
+* Enables easier sorting, filtering, and aggregations while still preventing accidental currency mixing by enforcing explicit currency filtering.
+* Aligns with industry practices in financial data warehousing and analytics, where multi-currency data is stored in one table with a currency code column.
+* Simplifies future LLM prompt design by avoiding special-case logic for multiple tables.
+
+
+**Impact:**
+* Transformer output format changes (no more usd_expenses and cop_expenses keys).
+* Tests and downstream modules must be updated to handle the unified format.
+* LLM prompt templates and analytics queries will need explicit currency filtering.
+
+
+**Next Steps:**
+* Refactor extract_expenses_from_tables() to output a unified list with a currency field.
+* Update unit tests to reflect the new data model.
+* Adjust any prototype DB insertion logic to target the unified schema.
+* Document LLM prompt adjustments to request or assume a currency context for natural queries.
+
+
+
+
+
+

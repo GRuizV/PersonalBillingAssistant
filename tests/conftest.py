@@ -5,6 +5,9 @@ import os
 # Third-party imports
 import pytest
 
+# Local imports
+from src.textract.parse_textract_output import parse_textract_file
+
 
 
 
@@ -25,6 +28,7 @@ def ground_truth_data():
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
+
 @pytest.fixture
 def sample_tables():
     """
@@ -41,3 +45,15 @@ def sample_tables():
     )
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+@pytest.fixture
+def bancolombia_tables():
+
+    """Fixture: Load parsed tables for a known Bancolombia CC bill (Feb 2025)."""
+
+    input_path = "data/textract_output/2025-07-22_1035_cb23bdf6_BC - MC - 02 - FEB-2025.pdf.json"
+    
+    if not os.path.exists(input_path):
+        pytest.skip(f"Missing input file: {input_path}")
+    return parse_textract_file(input_path)

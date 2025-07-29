@@ -11,7 +11,7 @@ from datetime import datetime
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "../../config/bill_templates.json")
 
 
-# --- Auxiliar Functions ---
+# --- Helper Functions ---
 def load_template(template_name: str) -> dict:
 
     """Loads 'bill_templates.json' that contains the configuration for a specific Card-Issuer/Bill-Template"""
@@ -80,11 +80,11 @@ def classify_currency(table: list, template: dict) -> str:
 
     for row in table[1:]:
         if rule_match(row, template["currency_split"]["foreign"]):
-            return "foreign"
+            return "USD"
         if rule_match(row, template["currency_split"]["domestic"]):
-            return "domestic"
+            return "COP"
         
-    return "domestic"  # default if no clear match
+    return "COP"  # default if no clear match
 
 
 
@@ -95,25 +95,34 @@ def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -
     """
     Extract normalized expense rows from parsed tables based on template.
 
-        Processing steps:
-        - Uses template field mapping from bill_templates.json
-        (maps PDF header names in Spanish → standardized English field names)
+    Processing steps:
+    - Uses template field mapping from bill_templates.json
+    - Output is a unified list of expenses with explicit `currency` field
+    - Adds placeholder `user_id` and `bill_id` fields (to be resolved upstream)
+    - Values normalized:
+        * Dates → ISO-8601 (%Y-%m-%d)
+        * Numeric amounts → float (negative values preserved)
+        * Text → stripped of leading/trailing whitespace
+    - Payment rows explicitly excluded based on template rules.
 
-        - Output record keys use **English, snake_case field names** defined in template mapping
-        (e.g., "Número de Autorización" → "authorization_number")
-
-        - Values are normalized:
-            * Dates → ISO-8601 (%Y-%m-%d)
-            * Numeric amounts → float (negative values preserved)
-            * Text → stripped of leading/trailing whitespace
-            
-        - Payment rows explicitly excluded based on template rules.
-
-        Returns:
-            dict: {
-                "usd_expenses": [ {<english_safe_keys>}, ...],
-                "cop_expenses": [ {<english_safe_keys>}, ...]
-            }
+    Returns:
+        dict: {
+            "user_id": "<placeholder>",
+            "bill_id": "<placeholder>",
+            "expenses": [
+                {
+                    "currency": "USD" | "COP",
+                    "authorization_number": "...",
+                    "transaction_date": "...",
+                    "description": "...",
+                    "original_amount": ...,
+                    "charges_and_credits": ...,
+                    "deferred_balance": ...,
+                    "installments": "..."
+                },
+                ...
+            ]
+        }
     """
 
     # Variables setting
@@ -123,7 +132,7 @@ def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -
     exclude_descriptions = [d.upper() for d in template.get("exclude_descriptions", [])]
 
     
-    expenses = {"usd_expenses": [], "cop_expenses": []}
+    all_expenses = []
 
     # Input traversing
     for table in tables:
@@ -139,7 +148,6 @@ def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -
 
         # Determine currency type
         currency_type = classify_currency(table, template)
-        bucket = "usd_expenses" if currency_type == "foreign" else "cop_expenses"
 
         # Records transformation
         for row in table[1:]:
@@ -148,15 +156,17 @@ def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -
             if all(not c for c in row):
                 continue
 
-            # Skip excluded descriptions
+            # Get the description
             description_idx = index_map.get("descripción")
             description = normalize_value(row[description_idx]) if description_idx is not None else ""
+
+            # Skip excluded descriptions
             if description.upper() in exclude_descriptions:
                 continue
 
 
-            # Record holder initialized
-            record = {}
+            # Record holder initialized & Currency assigned
+            record = {"currency":currency_type}
             
             # Record fields traversing
             for mapping in field_mappings:
@@ -175,6 +185,10 @@ def extract_expenses_from_tables(tables: list, template_name="bancolombia_v1") -
                 else:
                     record[english] = value
 
-            expenses[bucket].append(record)
+            all_expenses.append(record)
 
-    return expenses
+    return {
+        "user_id": "<Placerholder User>",
+        "bill_id": "<Placerholder Bill-id>",
+        "expenses": all_expenses
+    }
