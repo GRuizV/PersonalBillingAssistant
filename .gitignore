@@ -12,6 +12,8 @@ Nima_Cloud_Document_Map.md
 # Sensitive Info
 experiments/Data Extraction/Manual Extraction/Test PDFs/
 data/input_pdfs
+# Most of pdf are actual CC Bill with sensitive info
+*.pdf
 
 # __pycached__/
 *__pycache__/

@@ -94,7 +94,8 @@
 
 ## 📑​ Open Decisions
 
-- [Pending] Textract JSON retention policy → awaiting stakeholder input (meeting 2025-07-29)
+- [Pending] **Authentication design** → Plan module before Phase 1 closure. 
+- [Pending] **PDF Unlocker Module**  
 
 
 ---

@@ -14,17 +14,32 @@ from src.textract.parse_textract_output import parse_textract_file
 @pytest.fixture
 def ground_truth_data():
     """
-    Fixture: Load ground truth expense data used for validating extracted results.
+    Fixture: Load ground truth expense data for validation tests.
 
     Returns:
-        dict: Parsed JSON object containing manually verified ground truth data 
-              for one or more credit card bills.
+        dict: {
+            "expenses": [  # unified expense list
+                {
+                    "currency": "USD" | "COP",
+                    "authorization_number": str,
+                    "transaction_date": str (YYYY-MM-DD),
+                    "description": str,
+                    "original_amount": float,
+                    "charges_and_credits": float,
+                    "deferred_balance": float,
+                    "installments": str
+                },
+                ...
+            ]
+        }
     """
     path = os.path.join(
         os.path.dirname(__file__),
         "extraction_testing_data",
         "extraction_ground_truth.json"
     )
+    if not os.path.exists(path):
+        pytest.skip(f"Missing ground truth data file: {path}")
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 

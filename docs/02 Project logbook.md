@@ -207,6 +207,57 @@ Bill Metadata:
 * Document LLM prompt adjustments to request or assume a currency context for natural queries.
 
 
+### 📅 [2025-07-30] – Currency Identification & Textract Job Strategy (Combines "TABLES" & "FORMS" failure)
+
+**Context:**  
+We needed to validate whether a single Textract call using both `TABLES` and `FORMS` could deliver all required bill data:
+- Currency markers (`ESTADO DE CUENTA EN: DOLARES` / `ESTADO DE CUENTA EN: PESOS`)
+- Bill owner and product ID
+- Billing period
+- Expenses table
+
+**Experiments & Results:**  
+1. **Combined `TABLES+FORMS` call**  
+   - Correctly extracted non-tabular metadata (currency markers, bill owner, product ID, billing dates) via `FORMS`.  
+   - **However**, expense tables were corrupted:  
+     - Some cells were split into `LINE` blocks.  
+     - One table was partially reconstructed, mixing tabular and line-level data.
+
+2. **Raw JSON table reconstruction from combined job**  
+   - Attempted to rebuild tables directly from `TABLE` blocks only.  
+   - **Confirmed the corruption persisted**; tables were **incomplete** compared to the ground truth.
+
+**Key Learnings:**  
+- **Currency markers and metadata** are reliably extracted with `FORMS`.  
+- **Expense tables must be parsed separately** using a dedicated `TABLES`-only Textract call to preserve table integrity.  
+- To associate expenses with their currency:
+  - Use bounding box positions from the `FORMS` run for `"ESTADO DE CUENTA EN: DOLARES|PESOS"` markers.
+  - Infer currency context for each table from its vertical position relative to these markers.
+
+**Filename Parsing Consideration:**  
+- While the bill filename (`Extracto_774507892_202501_TARJETA_MASTERCARD_3667.pdf`) contains useful elements:
+  - Bill ID → `774507892`
+  - Billing period → `202501`
+  - Product ID → `TARJETA_MASTERCARD_3667`
+- Relying on filename parsing introduces **tight coupling** to Bancolombia’s current naming conventions.  
+- If the bank changes its naming policy, parsing logic would break and require refactoring.  
+- **Decision:** Avoid filename-based parsing for critical data and use Textract outputs (`FORMS`) for:
+  - Bill owner
+  - Product ID
+  - Billing period
+  - **Bill ID** → Will be built later when storing the bill in the DB as a combination of `Bill Owner` + `Product ID` + `Billing Period`
+  - Original File Name will still be saved as additional field in the Bill Data Model.
+  Filename parsing may remain as a **fallback**, but not as the primary data source.
+
+**Decisions:**  
+- Implement two independent Textract jobs:  
+  1. **FORMS job** → Collect metadata and currency markers (with position).  
+  2. **TABLES job** → Collect raw expense tables with guaranteed structure.  
+- Add a post-processing step to join both outputs by page and bounding box position, ensuring each expense table is tagged with the correct currency.
+
+**Next Steps:**  
+- Write join logic to map tables from the `TABLES` job to the nearest preceding currency marker from the `FORMS` job.  
+- Document and validate the final currency assignment heuristic with additional ground truth cases.  
 
 
 
