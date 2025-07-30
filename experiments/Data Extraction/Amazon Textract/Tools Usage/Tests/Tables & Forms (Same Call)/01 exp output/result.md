@@ -1,0 +1,1421 @@
+## Document Reading Order (With Currency Context)
+
+- [line] CUPÓN DE PAGO EN:
+- [line] DOLARES
+- [line] Bancolombia
+- [line] MasterCard
+- [line] NIT: 890.903.938-8
+- [line] 812
+- [line] SEÑOR (A):
+- [line] FECHA DE PAGO
+- [line] Tarjeta:
+- [line] AÑO
+- [line] DÍA
+- [line] MES
+- [line] JUAN SEBASTIAN RUIZ VILLA
+- [line] 3667
+- [table] currency=None
+  - ['', 'FORMA', 'DE PAGO', '', 'VALOR']
+  - ['EFECTIVO', 'CHEQUE', 'BANCO', 'NÚMERO', '']
+  - ['', '', '', '', '']
+- [line] CL 1 B OES 4 OES 200 AP 802 SANTIAGO DEL
+- [line] VALOR
+- [line] FORMA DE PAGO
+- [line] CALI
+- [line] NÚMERO
+- [line] EFECTIVO
+- [line] CHEQUE
+- [line] BANCO
+- [line] VALLE
+- [line] Bancolombia
+- [line] SEÑOR (A): JUAN SEBASTIAN RUIZ VILLA
+- [line] MasterCard
+- [line] TARJETA:
+- [line] 3667
+- [line] NIT: 890.903.938-8
+- [line] ESTADO DE CUENTA EN:
+- [line] DOLARES
+- [line] Recuerda estar al día en el pago de tu tarjeta
+- [line] Evolucionamos nuestra imagen
+- [line] para evitar cobro de intereses por mora, débitos a
+- [line] pero tus tarjetas siguen
+- [line] tus cuentas y el bloqueo de tu tarjeta.
+- [line] siendo válidas.
+- [line] Recuerda estar al día en el pago de tu tarjeta para evitar cobro de intereses por mora, débitos a tus cuentas y el bloqueo de tu tarjeta.
+- [table] currency=None
+  - ['Cupo Total', 'Cupo de Avances', 'Período', 'Facturado']
+  - ['$ 14,000,000.00', '$ 14,000,000.00', 'Desde: 30/12/2024', 'Hasta: 30/01/2025']
+- [line] Cupo Total
+- [line] Cupo de Avances
+- [line] Período Facturado
+- [line] $ 14,000,000.00
+- [line] $ 14,000,000.00
+- [line] Hasta: 30/01/2025
+- [line] Desde: 30/12/2024
+- [table] currency=None
+  - ['Disponible Total', 'Disponible Avances', 'Pague antes de', 'Valor Pagado']
+  - ['$ 3,489,559.70', '$ 3,489,559.70', '17/02/2025', '']
+- [line] Valor Pagado
+- [line] Disponible Avances
+- [line] Disponible Total
+- [line] Pague antes de
+- [line] $ 3,489,559.70
+- [line] $ 3,489,559.70
+- [line] 17/02/2025
+- [table] currency=None
+  - ['Resumen Pago Mínimo', '']
+  - ['Saldo en mora', '0.00']
+  - ['+ Cuota compras del mes', '19.12']
+  - ['+ Intereses de mora', '0.00']
+  - ['+ Intereses corrientes', '1.49']
+  - ['+ Cuota avances', '0.00']
+  - ['+ Otros cargos', '0.00']
+  - ['+ Cuota compras anteriores', '0.00']
+  - ['Saldo a favor', '0.00']
+  - ['Pago mínimo', '21.00']
+- [table] currency=None
+  - ['Resumen Saldo Total', '']
+  - ['Saldo anterior', '2,165.50']
+  - ['+ Compras del mes', '853.34']
+  - ['+ Intereses de mora', '0.00']
+  - ['+ Intereses corrientes', '1.49']
+  - ['+ Avances', '0.00']
+  - ['+ Otros cargos', '0.00']
+  - ['Pagos abonos', '2,331.60']
+  - ['Saldo a favor', '0.00']
+  - ['Pagos total', '689.00']
+- [line] Resumen Saldo Total
+- [line] Resumen Pago Mínimo
+- [line] Tasas de interés vigente
+- [table] currency=None
+  - ['', 'vigente', '']
+  - ['', 'M.V.', 'E.A.']
+  - ['Compra Internacional', '1,8646%', '24,8186%']
+  - ['Avance Internacional', '1,8646%', '24,8186%']
+  - ['Mora', '1,8646%', '24,8186%']
+- [line] Saldo anterior
+- [line] Saldo en mora
+- [line] 2,165.50
+- [line] 0.00
+- [line] + Cuota compras del mes
+- [line] 853.34
+- [line] + Compras del mes
+- [line] 19.12
+- [line] E.A.
+- [line] M.V.
+- [line] + Intereses de mora
+- [line] 0.00
+- [line] + Intereses de mora
+- [line] 0.00
+- [line] + Intereses corrientes
+- [line] 1.49
+- [line] + Intereses corrientes
+- [line] 1.49
+- [line] Compra Internacional
+- [line] 24,8186%
+- [line] 1,8646%
+- [line] + Cuota avances
+- [line] 0.00
+- [line] 0.00
+- [line] + Avances
+- [line] Avance Internacional
+- [line] 1,8646%
+- [line] 24,8186%
+- [line] + Otros cargos
+- [line] + Otros cargos
+- [line] 0.00
+- [line] 0.00
+- [line] Mora
+- [line] 1,8646%
+- [line] 24,8186%
+- [line] 2,331.60
+- [line] + Cuota compras anteriores
+- [line] 0.00
+- [line] Pagos abonos
+- [line] Saldo a favor
+- [line] Saldo a favor
+- [line] 0.00
+- [line] 0.00
+- [line] Pago mínimo
+- [line] Pagos total
+- [line] 689.00
+- [line] 21.00
+- [line] Otros cargos: Este valor incluye los siguientes conceptos: Comisión avance, cuota de manejo, IVA por reexpedición, GMF y cobro por reexpedición
+- [line] Con Bancolombia Acumulas + Más Puntos Colombia. Consulta tu saldo de puntos, su fecha de vencimiento, redime y entérate de todos los aliados para ti
+- [line] Establecimiento Bancario.
+- [line] en www.puntoscolombia.com
+- [table] currency=None
+  - ['Número de Autorización', 'Fecha de Transacción', 'Descripción', 'Valor Original', 'Tasa Pactada', 'Tasa EA Facturada', 'Cargos y Abonos', 'Saldo a Diferir', 'Cuotas']
+  - ['', '30/01/2025', 'INTERESES CORRIENTES', '1.49', '', '', '1.49', '0.00', '']
+  - ['T00426', '25/01/2025', 'APPLE.COM/BILL VR MONEDA ORIG 27800.0 USA', '6.55', '1,8646', '24,8186', '0.18', '6.37', '1/36']
+  - ['T02646', '23/01/2025', 'APPLE.COM/BILL VR MONEDA ORIG 51400.0 USA', '11.94', '1,8646', '24,8186', '0.33', '11.61', '1/36']
+  - ['T05318', '22/01/2025', 'APPLE.COM/BILL VR MONEDA ORIG 28900.0 USA', '6.65', '1,8646', '24,8186', '0.18', '6.47', '1/36']
+  - ['T04808', '22/01/2025', 'APPLE.COM/BILL VR MONEDA ORIG 54500.0 USA', '12.55', '1,8646', '24,8186', '0.35', '12.20', '1/36']
+  - ['T05891', '19/01/2025', 'APPLE.COM/BILL VR MONEDA ORIG 44900,0 USA', '10.35', '1,8646', '24,8186', '0.29', '10.06', '1/36']
+  - ['T06913', '15/01/2025', 'Nintendo CA1340869938', '24.99', '1,8646', '24,8186', '0.69', '24.30', '1/36']
+  - ['T04471', '15/01/2025', 'Nintendo CA1341237865', '2.19', '1,8646', '24,8186', '0.06', '2.13', '1/36']
+  - ['R01044', '14/01/2025', 'OPENAI *CHATGPT SUBSCR', '20.00', '1,8646', '24,8186', '0.56', '19.44', '1/36']
+  - ['T04122', '12/01/2025', 'PAYPAL *MULLVAD VR MONEDA ORIG 23549.0 SWE', '5.45', '1,8646', '24,8186', '0.15', '5.30', '1/36']
+  - ['R00743', '11/01/2025', 'WDFG MADRID T4 2 VR MONEDA ORIG 000000004215 ES', '45.09', '1,8646', '24,8186', '1.25', '43.84', '1/36']
+  - ['F01354', '10/01/2025', 'PETIT CAFE EL GRECO VR MONEDA ORIG 15,3 ESP']
+- [line] Fecha de
+- [line] Tasa EA
+- [line] Tasa
+- [line] Número de
+- [line] Valor Original
+- [line] Descripción
+- [line] Saldo a Diferir
+- [line] Cuotas
+- [line] Cargos y Abonos
+- [line] Autorización
+- [line] Facturada
+- [line] Transacción
+- [line] Pactada
+- [line] INTERESES CORRIENTES
+- [line] 30/01/2025
+- [line] 1.49
+- [line] 0.00
+- [line] 1.49
+- [line] 1,8646
+- [line] APPLE.COM/BILL
+- [line] 1/36
+- [line] 24,8186
+- [line] 25/01/2025
+- [line] T00426
+- [line] 6.37
+- [line] 6.55
+- [line] 0.18
+- [line] BANCOLOMBIA S.A.
+- [line] VR MONEDA ORIG 27800.0 USA
+- [line] APPLE.COM/BILL
+- [line] T02646
+- [line] 24,8186
+- [line] 1/36
+- [line] 1,8646
+- [line] 23/01/2025
+- [line] 0.33
+- [line] 11.61
+- [line] 11.94
+- [line] VR MONEDA ORIG 51400.0 USA
+- [line] APPLE.COM/BILL
+- [line] T05318
+- [line] 6.47
+- [line] 24,8186
+- [line] 1/36
+- [line] 22/01/2025
+- [line] 1,8646
+- [line] 6.65
+- [line] 0.18
+- [line] VR MONEDA ORIG 28900.0 USA
+- [line] APPLE.COM/BILL
+- [line] 0.35
+- [line] 22/01/2025
+- [line] 24,8186
+- [line] 1/36
+- [line] T04808
+- [line] 1,8646
+- [line] 12.20
+- [line] 12.55
+- [line] VR MONEDA ORIG 54500.0 USA
+- [line] SUPERINTENDENCIA FINANCIERA
+- [line] T05891
+- [line] 19/01/2025
+- [line] 1,8646
+- [line] APPLE.COM/BILL
+- [line] 0.29
+- [line] 1/36
+- [line] 10.35
+- [line] 24,8186
+- [line] 10.06
+- [line] VR MONEDA ORIG 44900,0 USA
+- [line] COLOMBIA
+- [line] 24.99
+- [line] Nintendo CA1340869938
+- [line] 24.30
+- [line] 15/01/2025
+- [line] 0.69
+- [line] 1/36
+- [line] T06913
+- [line] 24,8186
+- [line] 1,8646
+- [line] Nintendo CA1341237865
+- [line] T04471
+- [line] 0.06
+- [line] 15/01/2025
+- [line] 24,8186
+- [line] 2.19
+- [line] 2.13
+- [line] 1/36
+- [line] 1,8646
+- [line] OPENAI *CHATGPT SUBSCR
+- [line] 14/01/2025
+- [line] R01044
+- [line] 0.56
+- [line] 24,8186
+- [line] 1,8646
+- [line] 1/36
+- [line] 19.44
+- [line] 20.00
+- [line] PAYPAL *MULLVAD
+- [line] 24,8186
+- [line] 12/01/2025
+- [line] T04122
+- [line] 5.45
+- [line] 1,8646
+- [line] 1/36
+- [line] 0.15
+- [line] 5.30
+- [line] VR MONEDA ORIG 23549.0 SWE
+- [line] VIGILADO
+- [line] R00743
+- [line] 45.09
+- [line] WDFG MADRID T4 2
+- [line] 1.25
+- [line] 1/36
+- [line] 11/01/2025
+- [line] 43.84
+- [line] 24,8186
+- [line] 1,8646
+- [line] VR MONEDA ORIG 000000004215 ES
+- [line] PETIT CAFE EL GRECO
+- [line] 0.44
+- [line] 1/36
+- [line] F01354
+- [line] 1,8646
+- [line] 24,8186
+- [line] 15.80
+- [line] 10/01/2025
+- [line] 15.36
+- [line] VR MONEDA ORIG 15,3 ESP
+- [line] TAXI FLORENTINO
+- [line] 24,8186
+- [line] 0.41
+- [line] 1,8646
+- [line] 1/36
+- [line] 10/01/2025
+- [line] R04864
+- [line] 14.61
+- [line] 14.20
+- [line] VR MONEDA ORIG 14,1 ESP
+- [line] R04865
+- [line] SPLICE.COM* SOUNDS 100
+- [line] 1/36
+- [line] 10/01/2025
+- [line] 7.77
+- [line] 7.99
+- [line] 24,8186
+- [line] 0.22
+- [line] 1,8646
+- [line] TAXI SEVILLA LIC 1269
+- [line] R09267
+- [line] 6.85
+- [line] 1/36
+- [line] 09/01/2025
+- [line] 24,8186
+- [line] 0.19
+- [line] 6.66
+- [line] 1,8646
+- [line] DCF:defensor@bancolombia.com.co;www.bancolombia.com/personas/defensor-financiero: Cr48#18A-14 P11 Medellin:Tel6043561225-018000522622
+- [line] 1/2
+- [line] Pag.
+- [line] CUPÓN DE PAGO EN:
+- [line] PESOS
+- [line] Bancolombia
+- [line] Bancolombia
+- [line] SEÑOR (A): JUAN SEBASTIAN RUIZ VILLA
+- [line] MasterCard
+- [line] MasterCard
+- [line] Tarjeta:
+- [line] 3667
+- [line] NIT: 890.903.938-8
+- [line] NIT: 890.903.938-8
+- [line] Periodo facturado desde:
+- [line] hasta:
+- [line] 812
+- [line] 30/01/2025
+- [line] 30/12/2024
+- [line] ESTADO DE CUENTA EN:
+- [line] DOLARES
+- [line] SEÑOR (A):
+- [line] FECHA DE PAGO
+- [line] Tarjeta:
+- [line] AÑO
+- [line] DÍA
+- [line] MES
+- [line] JUAN SEBASTIAN RUIZ VILLA
+- [line] 3667
+- [table] currency=None
+  - ['Número de Autorización', 'Fecha de Transacción', 'Descripción', 'Valor Original', 'Tasa Pactada', 'Tasa EA Facturada', 'Cargos y Abonos', 'Saldo a Diferir', 'Cuotas']
+  - ['H04826', '09/01/2025', 'VR MONEDA ORIG 6,6 ESP HOTEL AMERICA VR MONEDA ORIG 000000003200 ES', '34.67', '1,8646', '24,8186', '0.96', '33.71', '1/36']
+  - ['H05556', '09/01/2025', 'PARADOR DE MERIDA VR MONEDA ORIG 15,0 ESP', '15.57', '1,8646', '24,8186', '0.43', '15.14', '1/36']
+  - ['R06750', '08/01/2025', 'EL CORTE INGLES-DEPART VR MONEDA ORIG 000000005384 ES', '59.70', '1,8646', '24,8186', '1.66', '58.04', '1/36']
+  - ['F03228', '08/01/2025', 'RESCOLDO VIVO VR MONEDA ORIG 000000001100 ES', '12.28', '1,8646', '24,8186', '0.34', '11.94', '1/36']
+  - ['R05236', '07/01/2025', 'MADE OF CORK 4 VR MONEDA ORIG 15,9 ESP', '16.68', '1,8646', '24,8186', '0.46', '16.22', '1/36']
+  - ['F00321', '07/01/2025', '3AR LA SEGUNDA GIRALDA VR MONEDA ORIG 80,0 ESP', '83.51', '1,8646', '24,8186', '2.32', '81.19', '1/36']
+  - ['F04550', '07/01/2025', 'ALACENA SAN ELOY TIEND VR MONEDA ORIG 3,5 ESP', '3.65', '1,8646', '24,8186', '0.10', '3.55', '1/36']
+  - ['F03565', '07/01/2025', 'ALACENA SAN ELOY TIEND VR MONEDA ORIG 8,9 ESP', '9.34', '1,8646', '24,8186', '0.26', '9.08', '1/36']
+  - ['T01974', '06/01/2025', 'APPLE.COM/BILL VR MONEDA ORIG 15900.0 USA', '3.60', '1,8646', '24,8186', '0.10', '3.50', '1/36']
+  - ['F07705', '06/01/2025', 'MARRAKECH VR MONEDA ORIG 7,0 ESP', '7.21', '1,8646', '24,8186', '0.20', '7.01', '1/36']
+  - ['R04260', '06/01/2025', 'TAXI LIC MUNICIPAL COR VR MONEDA ORIG 11,3 ESP', '11.69', '1,8646', '24,8186', '0.32', '11.37', '1/36']
+  - ['R00275', '06/01/2025', 'TAXI LM 254 VR MONEDA ORIG 10,5 ESP', '10.92', '1,8646', '24,8186', '0.30', '10.62', '1/36']
+  - ['T01337', '06/01/2025', 'Scribd Inc *496589665', '10.70', '1,8646', '24,8186', '0.30', '10.40', '1/36']
+  - ['T01111', '04/01/2025', 'APPLE.COM/BILL VR MONEDA ORIG 7074.1 USA', '1.60-', '', '', '1.60-', '0.00', '']
+  - ['F03057', '04/01/2025', 'GASTROLETRAS S.L. VR MONEDA ORIG 000000001000 ES', '10.73', '1,8646', '24,8186', '0.30', '10.43', '1/36']
+  - ['R08721', '04/01/2025', 'MARIA DOLORES CANIZARE VR MONEDA ORIG 3,5 ESP', '3.61', '1,8646', '24,8186', '0.10', '3.51', '1/36']
+  - ['H01336', '04/01/2025', 'HOTEL AGUMAR VR MONEDA ORIG 130,3 ESP', '134.30', '1,8646', '24,8186', '3.73', '130.57', '1/36']
+  - ['R04269', '04/01/2025', 'NEBULA SUBSCRIPTION', '6.00', '1,8646', '24,8186', '0.17', '5.83', '1/36']
+  - ['C05919', '03/01/2025', 'ABONO SUCURSAL VIRTUAL', '2,166.00-', '', '', '2,166.00-', '0.00', '']
+  - ['C06693', '03/01/2025', 'ABONO SUCURSAL VIRTUAL', '164.00-', '', '', '164.00-', '0.00', '']
+  - ['T07374', '02/01/2025', 'SP HOLAFLY.COM', '63.80', '1,8646', '24,8186', '1.77', '60.30', '1/36']
+  - ['R00674', '31/12/2024', 'AMAZON MKTPL*ZP6S514N0', '164.37', '', '', '0.00', '0.00', '36/36']
+  - ['', '', '', '', '', '', '', '', '']
+- [line] Número de
+- [line] Tasa EA
+- [line] Fecha de
+- [line] Tasa
+- [line] Valor Original
+- [line] Saldo a Diferir
+- [line] Descripción
+- [line] Cuotas
+- [line] Cargos y Abonos
+- [line] CL 1 B OES 4 OES 200 AP 802 SANTIAGO DEL
+- [line] Transacción
+- [line] VALOR
+- [line] Autorización
+- [line] Facturada
+- [line] FORMA DE PAGO
+- [line] Pactada
+- [line] CALI
+- [line] NÚMERO
+- [line] VR MONEDA ORIG 6,6 ESP
+- [line] EFECTIVO
+- [line] CHEQUE
+- [line] BANCO
+- [line] VALLE
+- [line] HOTEL AMERICA
+- [line] 33.71
+- [line] 09/01/2025
+- [line] H04826
+- [line] 0.96
+- [line] 1/36
+- [line] 34.67
+- [line] 24,8186
+- [line] 1,8646
+- [line] VR MONEDA ORIG 000000003200 ES
+- [line] PARADOR DE MERIDA
+- [line] H05556
+- [line] 09/01/2025
+- [line] 1/36
+- [line] 15.14
+- [line] 0.43
+- [line] 24,8186
+- [line] 1,8646
+- [line] 15.57
+- [line] VR MONEDA ORIG 15,0 ESP
+- [line] EL CORTE INGLES-DEPART
+- [line] 08/01/2025
+- [line] R06750
+- [line] 24,8186
+- [line] 1/36
+- [line] 1,8646
+- [line] 59.70
+- [line] 58.04
+- [line] 1.66
+- [line] VR MONEDA ORIG 000000005384 ES
+- [line] Bancolombia
+- [line] RESCOLDO VIVO
+- [line] SEÑOR (A): JUAN SEBASTIAN RUIZ VILLA
+- [line] 08/01/2025
+- [line] F03228
+- [line] 24,8186
+- [line] 1,8646
+- [line] 0.34
+- [line] 1/36
+- [line] 12.28
+- [line] 11.94
+- [line] MasterCard
+- [line] VR MONEDA ORIG 000000001100 ES
+- [line] TARJETA:
+- [line] 3667
+- [line] MADE OF CORK 4
+- [line] 07/01/2025
+- [line] 1,8646
+- [line] 1/36
+- [line] 0.46
+- [line] 24,8186
+- [line] R05236
+- [line] 16.22
+- [line] 16.68
+- [line] VR MONEDA ORIG 15,9 ESP
+- [line] 07/01/2025
+- [line] 3AR LA SEGUNDA GIRALDA
+- [line] F00321
+- [line] 2.32
+- [line] 83.51
+- [line] 81.19
+- [line] 24,8186
+- [line] 1/36
+- [line] 1,8646
+- [line] VR MONEDA ORIG 80,0 ESP
+- [line] 07/01/2025
+- [line] ALACENA SAN ELOY TIEND
+- [line] F04550
+- [line] 0.10
+- [line] 3.65
+- [line] 1/36
+- [line] 1,8646
+- [line] 24,8186
+- [line] 3.55
+- [line] VR MONEDA ORIG 3,5 ESP
+- [line] ALACENA SAN ELOY TIEND
+- [line] 07/01/2025
+- [line] F03565
+- [line] 9.34
+- [line] 1,8646
+- [line] 9.08
+- [line] 0.26
+- [line] 1/36
+- [line] 24,8186
+- [line] VR MONEDA ORIG 8,9 ESP
+- [line] 06/01/2025
+- [line] APPLE.COM/BILL
+- [line] T01974
+- [line] 1,8646
+- [line] 24,8186
+- [line] 3.50
+- [line] 0.10
+- [line] 3.60
+- [line] 1/36
+- [line] VR MONEDA ORIG 15900.0 USA
+- [line] F07705
+- [line] 06/01/2025
+- [line] MARRAKECH
+- [line] 1,8646
+- [line] 24,8186
+- [line] 0.20
+- [line] 7.01
+- [line] 1/36
+- [line] 7.21
+- [line] VR MONEDA ORIG 7,0 ESP
+- [line] TAXI LIC MUNICIPAL COR
+- [line] 24,8186
+- [line] 06/01/2025
+- [line] 11.37
+- [line] R04260
+- [line] 1/36
+- [line] 0.32
+- [line] 11.69
+- [line] 1,8646
+- [line] VR MONEDA ORIG 11,3 ESP
+- [line] 0.30
+- [line] TAXI LM 254
+- [line] 06/01/2025
+- [line] R00275
+- [line] 10.62
+- [line] 1/36
+- [line] 24,8186
+- [line] 1,8646
+- [line] 10.92
+- [line] VR MONEDA ORIG 10,5 ESP
+- [line] Scribd Inc *496589665
+- [line] 06/01/2025
+- [line] 1,8646
+- [line] T01337
+- [line] 10.40
+- [line] 10.70
+- [line] 24,8186
+- [line] 0.30
+- [line] 1/36
+- [line] APPLE.COM/BILL
+- [line] T01111
+- [line] 04/01/2025
+- [line] 0.00
+- [line] 1.60-
+- [line] 1.60-
+- [line] VR MONEDA ORIG 7074.1 USA
+- [line] GASTROLETRAS S.L.
+- [line] F03057
+- [line] 04/01/2025
+- [line] 1,8646
+- [line] 10.43
+- [line] 0.30
+- [line] 24,8186
+- [line] 10.73
+- [line] 1/36
+- [line] VR MONEDA ORIG 000000001000 ES
+- [line] MARIA DOLORES CANIZARE
+- [line] R08721
+- [line] 3.51
+- [line] 04/01/2025
+- [line] 24,8186
+- [line] 3.61
+- [line] 1/36
+- [line] 0.10
+- [line] 1,8646
+- [line] VR MONEDA ORIG 3,5 ESP
+- [line] HOTEL AGUMAR
+- [line] 04/01/2025
+- [line] H01336
+- [line] 24,8186
+- [line] 130.57
+- [line] 1/36
+- [line] 134.30
+- [line] 3.73
+- [line] 1,8646
+- [line] VR MONEDA ORIG 130,3 ESP
+- [line] NEBULA SUBSCRIPTION
+- [line] R04269
+- [line] 04/01/2025
+- [line] 24,8186
+- [line] 5.83
+- [line] 0.17
+- [line] 1/36
+- [line] 6.00
+- [line] 1,8646
+- [line] ABONO SUCURSAL VIRTUAL
+- [line] C05919
+- [line] 03/01/2025
+- [line] 2,166.00-
+- [line] 2,166.00-
+- [line] 0.00
+- [line] ABONO SUCURSAL VIRTUAL
+- [line] 03/01/2025
+- [line] 164.00-
+- [line] 164.00-
+- [line] 0.00
+- [line] C06693
+- [line] SP HOLAFLY.COM
+- [line] T07374
+- [line] 02/01/2025
+- [line] 63.80
+- [line] 1/36
+- [line] 1,8646
+- [line] 24,8186
+- [line] 60.30
+- [line] 1.77
+- [line] 31/12/2024
+- [line] AMAZON MKTPL*ZP6S514N0
+- [line] R00674
+- [line] 36/36
+- [line] 164.37
+- [line] 0.00
+- [line] 0.00
+- [line] Establecimiento Bancario.
+- [line] BANCOLOMBIA S.A.
+- [line] SUPERINTENDENCIA FINANCIERA
+- [line] DE COLOMBIA
+- [line] VIGILADO
+- [line] DCF:defensor@bancolombia.com.cowww.bancolombia.com/personas/defensor-financiero Cr48#18A-14 P11 Medellin:Tel6043561225-018000522622
+- [line] Pag.
+- [line] 2/2
+- [table] currency=None
+  - ['', 'FORMA', 'DE PAGO', '', 'VALOR']
+  - ['EFECTIVO', 'CHEQUE', 'BANCO', 'NÚMERO', '']
+  - ['', '', '', '', '']
+- [line] NIT: 890.903.938-8
+- [line] PESOS
+- [line] ESTADO DE CUENTA EN:
+- [line] Recuerda estar al día en el pago de tu tarjeta
+- [line] Evolucionamos nuestra imagen
+- [line] para evitar cobro de intereses por mora, débitos a
+- [line] pero tus tarjetas siguen
+- [line] tus cuentas y el bloqueo de tu tarjeta.
+- [line] siendo válidas.
+- [line] Recuerda estar al día en el pago de tu tarjeta para evitar cobro de intereses por mora, débitos a tus cuentas y el bloqueo de tu tarjeta.
+- [table] currency=None
+  - ['Cupo Total', 'Cupo de Avances', 'Período', 'Facturado']
+  - ['$ 14,000,000.00', '$ 14,000,000.00', 'Desde: 30/12/2024', 'Hasta: 30/01/2025']
+- [line] Cupo de Avances
+- [line] Cupo Total
+- [line] Período Facturado
+- [line] $ 14,000,000.00
+- [line] $ 14,000,000.00
+- [line] Hasta: 30/01/2025
+- [line] Desde: 30/12/2024
+- [table] currency=None
+  - ['Disponible Total', 'Disponible Avances', 'Pague antes de', 'Valor Pagado']
+  - ['$ 3,489,559.70', '$ 3,489,559.70', '17/02/2025', '']
+- [line] Valor Pagado
+- [line] Disponible Avances
+- [line] Disponible Total
+- [line] Pague antes de
+- [line] $ 3,489,559.70
+- [line] $ 3,489,559.70
+- [line] 17/02/2025
+- [table] currency=None
+  - ['Resumen Saldo Total', '']
+  - ['Saldo anterior', '3,191,669.44']
+  - ['+ Compras del mes', '7,651,313.00']
+  - ['+ Intereses de mora', '0.00']
+  - ['+ Intereses corrientes', '1,182.27']
+  - ['+ Avances', '0.00']
+  - ['+ Otros cargos', '48,490.00']
+  - ['Pagos abonos', '3,271,850.00']
+  - ['Saldo a favor', '0.00']
+  - ['= Pagos total', '7,620,805.00']
+- [table] currency=None
+  - ['Resumen Pago Mínimo', '']
+  - ['Saldo en mora', '0.00']
+  - ['+ Cuota compras del mes', '7,571,132.44']
+  - ['+ Intereses de mora', '0.00']
+  - ['+ Intereses corrientes', '1,182.27']
+  - ['+ Cuota avances', '0.00']
+  - ['+ Otros cargos', '48,490.00']
+  - ['+ Cuota compras anteriores', '0.00']
+  - ['Saldo a favor', '0.00']
+  - ['Pago mínimo', '7,620,805.00']
+- [line] Resumen Saldo Total
+- [line] Tasas de interés vigente
+- [line] Resumen Pago Mínimo
+- [table] currency=None
+  - ['', '', '']
+  - ['', 'M.V.', 'E.A.']
+  - ['Compra un mes', '0,0000%', '0,0000%']
+  - ['Compra 2 36 meses', '1,8646%', '24,8186%']
+  - ['Impuestos', '1,8646%', '24,8186%']
+  - ['Avances', '1,8646%', '24,8186%']
+  - ['Mora', '1,8646%', '24,8186%']
+- [line] Saldo anterior
+- [line] Saldo en mora
+- [line] 3,191,669.44
+- [line] 0.00
+- [line] + Cuota compras del mes
+- [line] 7,651,313.00
+- [line] + Compras del mes
+- [line] 7,571,132.44
+- [line] E.A.
+- [line] M.V.
+- [line] + Intereses de mora
+- [line] + Intereses de mora
+- [line] 0.00
+- [line] 0.00
+- [line] + Intereses corrientes
+- [line] + Intereses corrientes
+- [line] 1,182.27
+- [line] 1,182.27
+- [line] Compra un mes
+- [line] 0,0000%
+- [line] 0,0000%
+- [line] + Cuota avances
+- [line] + Avances
+- [line] 0.00
+- [line] 0.00
+- [line] 24,8186%
+- [line] 1,8646%
+- [line] Compra 2 36 meses
+- [line] + Otros cargos
+- [line] + Otros cargos
+- [line] 48,490.00
+- [line] 48,490.00
+- [line] 24,8186%
+- [line] 1,8646%
+- [line] Impuestos
+- [line] + Cuota compras anteriores
+- [line] Pagos abonos
+- [line] 3,271,850.00
+- [line] 0.00
+- [line] Avances
+- [line] 24,8186%
+- [line] 1,8646%
+- [line] Saldo a favor
+- [line] Saldo a favor
+- [line] 0.00
+- [line] 0.00
+- [line] Mora
+- [line] 1,8646%
+- [line] 24,8186%
+- [line] 7,620,805.00
+- [line] Pago mínimo
+- [line] = Pagos total
+- [line] 7,620,805.00
+- [line] Otros cargos: Este valor incluye los siguientes conceptos: Comisión avance, cuota de manejo, IVA por reexpedición, GMF y cobro por reexpedición
+- [line] Con Bancolombia Acumulas + Más Puntos Colombia. Consulta tu saldo de puntos, su fecha de vencimiento, redime y entérate de todos los aliados para ti
+- [line] Establecimiento Bancario.
+- [line] en www.puntoscolombia.com
+- [table] currency=None
+  - ['Número de Autorización', 'Fecha de Transacción', 'Descripción', 'Valor Original', 'Tasa Pactada', 'Tasa EA Facturada', 'Cargos y Abonos', 'Saldo a Diferir', 'Cuotas']
+  - ['', '30/01/2025', 'INTERESES CORRIENTES']
+- [line] Fecha de
+- [line] Tasa
+- [line] Tasa EA
+- [line] Número de
+- [line] Descripción
+- [line] Saldo a Diferir
+- [line] Valor Original
+- [line] Cuotas
+- [line] Cargos y Abonos
+- [line] Autorización
+- [line] Facturada
+- [line] Transacción
+- [line] Pactada
+- [line] INTERESES CORRIENTES
+- [line] 1,182.27
+- [line] 1,182.27
+- [line] 30/01/2025
+- [line] 0.00
+- [line] 000000
+- [line] CUOTA DE MANEJO
+- [line] 48,490.00
+- [line] 48,490.00
+- [line] 30/01/2025
+- [line] 0.00
+- [line] BANCOLOMBIA S.A.
+- [line] 1/1
+- [line] 00,0000
+- [line] 21,900.00
+- [line] DiDi CO Food
+- [line] 0,0000
+- [line] F04108
+- [line] 21,900.00
+- [line] 30/01/2025
+- [line] 0.00
+- [line] AJUSTE MANUAL A FAVOR
+- [line] 43,513.00-
+- [line] 29/01/2025
+- [line] 000000
+- [line] 0.00
+- [line] 43,513.00-
+- [line] F01759
+- [line] DiDi CO Food
+- [line] 00,0000
+- [line] 0,0000
+- [line] 28/01/2025
+- [line] 0.00
+- [line] 1/1
+- [line] 32,580.00
+- [line] 32,580.00
+- [line] RAPPI*RAPPI COLOMBIA
+- [line] 0,0000
+- [line] 216,000.00
+- [line] 28/01/2025
+- [line] 0.00
+- [line] 1/1
+- [line] R09811
+- [line] 00,0000
+- [line] 216,000.00
+- [line] 0,0000
+- [line] AMAZON.COM
+- [line] R00996
+- [line] 1/1
+- [line] 583,731.00
+- [line] 0.00
+- [line] 00,0000
+- [line] 583,731.00
+- [line] 28/01/2025
+- [line] 26,400.00
+- [line] 26,400.00
+- [line] 1/1
+- [line] 00,0000
+- [line] 0,0000
+- [line] 0.00
+- [line] SPOTIFY*DL
+- [line] T02764
+- [line] 27/01/2025
+- [line] 00,0000
+- [line] 26,451.00
+- [line] 26,451.00
+- [line] 1/1
+- [line] 0,0000
+- [line] 0.00
+- [line] 26/01/2025
+- [line] UBER RIDES
+- [line] R05881
+- [line] SUPERINTENDENCIA FINANCIERA
+- [line] DLO*RAPPI COLOMBIA
+- [line] 0.00
+- [line] 47,150.00
+- [line] 26/01/2025
+- [line] R01881
+- [line] 0,0000
+- [line] 00,0000
+- [line] 47,150.00
+- [line] 1/1
+- [line] LA TIENDA CAMDEN PENON
+- [line] R03581
+- [line] 25/01/2025
+- [line] 0.00
+- [line] 00,0000
+- [line] 36,207.00
+- [line] 36,207.00
+- [line] 0,0000
+- [line] 1/1
+- [line] COLOMBIA
+- [line] R07844
+- [line] UBER RIDES
+- [line] 0.00
+- [line] 00,0000
+- [line] 25/01/2025
+- [line] 0,0000
+- [line] 23,153.00
+- [line] 23,153.00
+- [line] 1/1
+- [line] DLO*RAPPI COLOMBIA
+- [line] 336,925.00
+- [line] 0,0000
+- [line] 336,925.00
+- [line] R03640
+- [line] 0.00
+- [line] 25/01/2025
+- [line] 1/1
+- [line] 00,0000
+- [line] 0,0000
+- [line] R05150
+- [line] DLO*RAPPI COLOMBIA
+- [line] 00,0000
+- [line] 25/01/2025
+- [line] 83,950.00
+- [line] 0.00
+- [line] 1/1
+- [line] 83,950.00
+- [line] DLO*RAPPI COLOMBIA
+- [line] 942,800.00
+- [line] 1/1
+- [line] 00,0000
+- [line] R09029
+- [line] 25/01/2025
+- [line] 942,800.00
+- [line] 0.00
+- [line] 0,0000
+- [line] AJUSTE MANUAL A FAVOR
+- [line] 24/01/2025
+- [line] 36,667.00-
+- [line] 0.00
+- [line] 36,667.00-
+- [line] 000000
+- [line] VIGILADO
+- [line] R06385
+- [line] LA MASCOTERIA
+- [line] 0,0000
+- [line] 24/01/2025
+- [line] 0.00
+- [line] 62,900.00
+- [line] 1/1
+- [line] 00,0000
+- [line] 62,900.00
+- [line] RAPPI*RAPPI COLOMBIA
+- [line] R04716
+- [line] 0,0000
+- [line] 24/01/2025
+- [line] 119,900.00
+- [line] 00,0000
+- [line] 0.00
+- [line] 119,900.00
+- [line] 1/1
+- [line] DLO*RAPPI COLOMBIA
+- [line] 00,0000
+- [line] 0,0000
+- [line] 121,250.00
+- [line] 1/1
+- [line] 0.00
+- [line] 121,250.00
+- [line] R01501
+- [line] 24/01/2025
+- [line] 51,000.00
+- [line] RAPPI*RAPPI COLOMBIA
+- [line] 00,0000
+- [line] 51,000.00
+- [line] 0,0000
+- [line] 1/1
+- [line] 0.00
+- [line] R04519
+- [line] 23/01/2025
+- [line] DiDi CO Food
+- [line] F03256
+- [line] 27,169.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] 1/1
+- [line] 27,169.00
+- [line] 0.00
+- [line] 23/01/2025
+- [line] 0,0000
+- [line] F01057
+- [line] DiDi CO Food
+- [line] 1/1
+- [line] 22/01/2025
+- [line] 00,0000
+- [line] 0.00
+- [line] 47,053.00
+- [line] 47,053.00
+- [line] F08927
+- [line] 277,500.00
+- [line] SONOMA CUISINE
+- [line] 0,0000
+- [line] 1/1
+- [line] 0.00
+- [line] 22/01/2025
+- [line] 00,0000
+- [line] 277,500.00
+- [line] DiDi CO Food
+- [line] 1/1
+- [line] 0,0000
+- [line] F07135
+- [line] 00,0000
+- [line] 21/01/2025
+- [line] 0.00
+- [line] 36,478.00
+- [line] 36,478.00
+- [line] DCF:defensor@bancolombia.com.cowww.bancolombia.com/personas/defensor-financiero; Cr48#18A-14 P11 Medellin;Tel6043561225-018000522622
+- [line] 1/2
+- [line] Pag.
+- [line] Bancolombia
+- [line] SEÑOR (A): JUAN SEBASTIAN RUIZ VILLA
+- [line] MasterCard
+- [line] Tarjeta:
+- [line] 3667
+- [line] NIT: 890.903.938-8
+- [line] Periodo facturado desde:
+- [line] hasta:
+- [line] 30/01/2025
+- [line] 30/12/2024
+- [line] ESTADO DE CUENTA EN:
+- [line] PESOS
+- [line] Número de
+- [line] Fecha de
+- [line] Tasa EA
+- [line] Tasa
+- [line] Valor Original
+- [line] Descripción
+- [line] Saldo a Diferir
+- [line] Cuotas
+- [line] Cargos y Abonos
+- [line] Autorización
+- [line] Transacción
+- [line] Pactada
+- [line] Facturada
+- [line] RAPPI*RAPPI COLOMBIA
+- [line] R01555
+- [line] 0,0000
+- [line] 21/01/2025
+- [line] 216,500.00
+- [line] 216,500.00
+- [line] 0.00
+- [line] 1/1
+- [line] 00,0000
+- [line] COMCEL PAGO DE FACTURA
+- [line] 0.00
+- [line] 163,239.00
+- [line] 21/01/2025
+- [line] 00,0000
+- [line] 163,239.00
+- [line] 1/1
+- [line] 0,0000
+- [line] R00997
+- [line] DLO*RAPPI COLOMBIA
+- [line] 21/01/2025
+- [line] 59,000.00
+- [line] 00,0000
+- [line] 59,000.00
+- [line] 0.00
+- [line] 0,0000
+- [line] 1/1
+- [line] R04993
+- [line] BARAKA PE ON
+- [line] 26,300.00
+- [line] R00961
+- [line] 26,300.00
+- [line] 0.00
+- [line] 21/01/2025
+- [line] 00,0000
+- [line] 1/1
+- [line] 0,0000
+- [line] R04163
+- [line] CALATHEA
+- [line] 28,000.00
+- [line] 19/01/2025
+- [line] 00,0000
+- [line] 0,0000
+- [line] 0.00
+- [line] 1/1
+- [line] 28,000.00
+- [line] DLO*RAPPI COLOMBIA
+- [line] 124,150.00
+- [line] 19/01/2025
+- [line] 0.00
+- [line] 0,0000
+- [line] 1/1
+- [line] 00,0000
+- [line] 124,150.00
+- [line] R09846
+- [line] RESTAURANTE PIZZERIA o
+- [line] F02435
+- [line] 58,453.00
+- [line] 58,453.00
+- [line] 19/01/2025
+- [line] 0,0000
+- [line] 0.00
+- [line] 00,0000
+- [line] 1/1
+- [line] UBER RIDES
+- [line] 18/01/2025
+- [line] 0,0000
+- [line] 00,0000
+- [line] 7,442.00
+- [line] 7,442.00
+- [line] 0.00
+- [line] R05403
+- [line] 1/1
+- [line] UBER RIDES
+- [line] 7,550.00
+- [line] 18/01/2025
+- [line] 0,0000
+- [line] 7,550.00
+- [line] R09213
+- [line] 00,0000
+- [line] 0.00
+- [line] 1/1
+- [line] 241,900.00
+- [line] IZUMI
+- [line] 18/01/2025
+- [line] 00,0000
+- [line] 0.00
+- [line] 241,900.00
+- [line] 0,0000
+- [line] F03199
+- [line] 1/1
+- [line] EL GUAYABO CAFE
+- [line] 114,285.00
+- [line] 18/01/2025
+- [line] 114,285.00
+- [line] 00,0000
+- [line] 0.00
+- [line] F09166
+- [line] 0,0000
+- [line] 1/1
+- [line] 254,360.00
+- [line] AMAZON.COM
+- [line] 254,360.00
+- [line] 17/01/2025
+- [line] 0,0000
+- [line] 00,0000
+- [line] 0.00
+- [line] R00770
+- [line] 1/1
+- [line] AMAZON.COM
+- [line] 175,201.00
+- [line] 175,201.00
+- [line] 17/01/2025
+- [line] 00,0000
+- [line] R01561
+- [line] 0.00
+- [line] 0,0000
+- [line] 1/1
+- [line] CARULLA AVENIDA COLOMB
+- [line] 47,700.00
+- [line] 00,0000
+- [line] R05901
+- [line] 16/01/2025
+- [line] 47,700.00
+- [line] 0.00
+- [line] 1/1
+- [line] 0,0000
+- [line] 359,524.00
+- [line] AMAZON.COM
+- [line] 359,524.00
+- [line] 00,0000
+- [line] R08349
+- [line] 16/01/2025
+- [line] 0.00
+- [line] 0,0000
+- [line] 1/1
+- [line] DiDi co Food
+- [line] 25,468.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] 15/01/2025
+- [line] 25,468.00
+- [line] F09255
+- [line] 0.00
+- [line] 1/1
+- [line] 29,700.00
+- [line] F00671
+- [line] 29,700.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] 15/01/2025
+- [line] MINIMARKET
+- [line] 0.00
+- [line] 1/1
+- [line] DLO*RAPPI COLOMBIA
+- [line] 15/01/2025
+- [line] 28,550.00
+- [line] 28,550.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] R00183
+- [line] 1/1
+- [line] 0.00
+- [line] 00,0000
+- [line] RAPPI*RAPPI COLOMBIA
+- [line] 216,500.00
+- [line] R01665
+- [line] 14/01/2025
+- [line] 216,500.00
+- [line] 0.00
+- [line] 1/1
+- [line] 0,0000
+- [line] DLO*RAPPI COLOMBIA
+- [line] 14/01/2025
+- [line] R03858
+- [line] 23,490.00
+- [line] 0,0000
+- [line] 0.00
+- [line] 00,0000
+- [line] 23,490.00
+- [line] 1/1
+- [line] DLO*RAPPI COLOMBIA
+- [line] 14/01/2025
+- [line] R04497
+- [line] 0,0000
+- [line] 294,033.00
+- [line] 0.00
+- [line] 00,0000
+- [line] 1/1
+- [line] 294,033.00
+- [line] RAPPI*RAPPI COLOMBIA
+- [line] 0.00
+- [line] 13/01/2025
+- [line] R02676
+- [line] 1/1
+- [line] 35,600.00
+- [line] 0,0000
+- [line] 00,0000
+- [line] 35,600.00
+- [line] EL PATIO DEL MUSEO
+- [line] 0.00
+- [line] 13/01/2025
+- [line] 1/1
+- [line] 44,796.00
+- [line] 44,796.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] R05795
+- [line] GRUPO EMPRESARIAL LA S
+- [line] 0.00
+- [line] 13/01/2025
+- [line] R03079
+- [line] 1/1
+- [line] 25,200.00
+- [line] 0,0000
+- [line] 25,200.00
+- [line] 00,0000
+- [line] EMCALI ETCE ESP
+- [line] 13/01/2025
+- [line] R02668
+- [line] 161,573.00
+- [line] 1/1
+- [line] 0,0000
+- [line] 161,573.00
+- [line] 00,0000
+- [line] 0.00
+- [line] DiDi CO Food
+- [line] 12/01/2025
+- [line] 0,0000
+- [line] 1/1
+- [line] F04212
+- [line] 0.00
+- [line] 86,242.00
+- [line] 00,0000
+- [line] 86,242.00
+- [line] ADOBE
+- [line] 12/01/2025
+- [line] R00040
+- [line] 1/1
+- [line] 0.00
+- [line] 333,200.00
+- [line] 00,0000
+- [line] 333,200.00
+- [line] 0,0000
+- [line] DLO*RAPPI
+- [line] R02129
+- [line] 12/01/2025
+- [line] 58,150.00
+- [line] 0.00
+- [line] 1/1
+- [line] 0,0000
+- [line] 58,150.00
+- [line] 00,0000
+- [line] DLO*RAPPI
+- [line] 12/01/2025
+- [line] R02489
+- [line] 0.00
+- [line] 1/1
+- [line] 62,450.00
+- [line] 62,450.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] DLO*RAPPI
+- [line] R03267
+- [line] 12/01/2025
+- [line] 1/1
+- [line] 0.00
+- [line] 56,800.00
+- [line] 0,0000
+- [line] 56,800.00
+- [line] 00,0000
+- [line] R07045
+- [line] DLO*RAPPI
+- [line] 44,850.00
+- [line] 12/01/2025
+- [line] 44,850.00
+- [line] 0.00
+- [line] 1/1
+- [line] 00,0000
+- [line] 0,0000
+- [line] MOVISTAR PAGOSEPAYCO
+- [line] 11/01/2025
+- [line] R05443
+- [line] 0.00
+- [line] 166,175.00
+- [line] 166,175.00
+- [line] 1/1
+- [line] 0,0000
+- [line] 00,0000
+- [line] PPRO*MICROSOFT
+- [line] 08/01/2025
+- [line] T06195
+- [line] 0.00
+- [line] 1/1
+- [line] 42,990.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] 42,990.00
+- [line] ABONO SUCURSAL VIRTUAL
+- [line] 03/01/2025
+- [line] C06203
+- [line] 3,191,670.00-
+- [line] 0.00
+- [line] 3,191,670.00-
+- [line] DiDi CO Food
+- [line] 03/01/2025
+- [line] 46,394.00
+- [line] F02495
+- [line] 1/1
+- [line] 46,394.00
+- [line] 0.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] MC DONALD S
+- [line] 03/01/2025
+- [line] F08545
+- [line] 32,400.00
+- [line] 1/1
+- [line] 0.00
+- [line] 32,400.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] EXITO WOW CHIPICHAPE
+- [line] 03/01/2025
+- [line] 507,201.00
+- [line] 507,201.00
+- [line] R09471
+- [line] 0.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] 1/1
+- [line] INVERSIONES TNS CHIPIC
+- [line] 03/01/2025
+- [line] 20,600.00
+- [line] 20,600.00
+- [line] 0.00
+- [line] 0,0000
+- [line] 00,0000
+- [line] 1/1
+- [line] R00988
+- [line] 03/01/2025
+- [line] DLO*RAPPI
+- [line] R01874
+- [line] 82,950.00
+- [line] 0.00
+- [line] 00,0000
+- [line] 82,950.00
+- [line] 1/1
+- [line] 0,0000
+- [line] ANANDA TALLER DULCE AR
+- [line] 03/01/2025
+- [line] 47,400.00
+- [line] 47,400.00
+- [line] R08903
+- [line] 1/1
+- [line] 0.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] RAPPI*RAPPI COLOMBIA
+- [line] 31/12/2024
+- [line] 29,969.44
+- [line] R00113
+- [line] 72,500.00
+- [line] 1/1
+- [line] 0.00
+- [line] 00,0000
+- [line] 0,0000
+- [line] DLO*RAPPI
+- [line] 31/12/2024
+- [line] 64,350.00
+- [line] 64,350.00
+- [line] 1/1
+- [line] 0,0000
+- [line] R06284
+- [line] 00,0000
+- [line] 0.00
+- [line] DLO*RAPPI
+- [line] 30/12/2024
+- [line] 0.00
+- [line] R02173
+- [line] 1/1
+- [line] 37,650.00
+- [line] 0.00
+- [line] Establecimiento Bancario.
+- [line] BANCOLOMBIA S.A.
+- [line] SUPERINTENDENCIA FINANCIERA
+- [line] DE COLOMBIA
+- [line] VIGILADO
+- [line] DCF:defensor@bancolombia.com.cowww.bancolombia.com/personas/defensor-financiero; Cr48#18A-14 P11 Medellin;Tel6043561225-018000522622
+- [line] Pag.
+- [line] 2/2
+- [table] currency=None
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '']
+  - ['R05795', '13/01/2025', 'EL PATIO DEL MUSEO', '44,796.00', '0,0000', '00,0000', '44,796.00', '0.00', '1/1']
+  - ['R03079', '13/01/2025', 'GRUPO EMPRESARIAL LA S', '25,200.00', '0,0000', '00,0000', '25,200.00', '0.00', '1/1']
+  - ['R02668', '13/01/2025', 'EMCALI ETCE ESP', '161,573.00', '0,0000', '00,0000', '161,573.00', '0.00', '1/1']
+  - ['F04212', '12/01/2025', 'DiDi CO Food', '86,242.00', '0,0000', '00,0000', '86,242.00', '0.00', '1/1']
+  - ['R00040', '12/01/2025', 'ADOBE', '333,200.00', '0,0000', '00,0000', '333,200.00', '0.00', '1/1']
+  - ['R02129', '12/01/2025', 'DLO*RAPPI', '58,150.00', '0,0000', '00,0000', '58,150.00', '0.00', '1/1']
+  - ['R02489', '12/01/2025', 'DLO*RAPPI', '62,450.00', '0,0000', '00,0000', '62,450.00', '0.00', '1/1']
+  - ['R03267', '12/01/2025', 'DLO*RAPPI', '56,800.00', '0,0000', '00,0000', '56,800.00', '0.00', '1/1']
+  - ['R07045', '12/01/2025', 'DLO*RAPPI', '44,850.00', '0,0000', '00,0000', '44,850.00', '0.00', '1/1']
+  - ['R05443', '11/01/2025', 'MOVISTAR PAGOSEPAYCO', '166,175.00', '0,0000', '00,0000', '166,175.00', '0.00', '1/1']
+  - ['T06195', '08/01/2025', 'PPRO*MICROSOFT', '42,990.00', '0,0000', '00,0000', '42,990.00', '0.00', '1/1']
+  - ['C06203', '03/01/2025', 'ABONO SUCURSAL VIRTUAL', '3,191,670.00-', '', '', '3,191,670.00-', '0.00', '']
+  - ['F02495', '03/01/2025', 'DiDi CO Food', '46,394.00', '0,0000', '00,0000', '46,394.00', '0.00', '1/1']
+  - ['F08545', '03/01/2025', 'MC DONALD S', '32,400.00', '0,0000', '00,0000', '32,400.00', '0.00', '1/1']
+  - ['R09471', '03/01/2025', 'EXITO WOW CHIPICHAPE', '507,201.00', '0,0000', '00,0000', '507,201.00', '0.00', '1/1']
+  - ['R00988', '03/01/2025', 'INVERSIONES TNS CHIPIC', '20,600.00', '0,0000', '00,0000', '20,600.00', '0.00', '1/1']
+  - ['R01874', '03/01/2025', 'DLO*RAPPI', '82,950.00', '0,0000', '00,0000', '82,950.00', '0.00', '1/1']
+  - ['R08903', '03/01/2025', 'ANANDA TALLER DULCE AR', '47,400.00', '0,0000', '00,0000', '47,400.00', '0.00', '1/1']
+  - ['R00113', '31/12/2024', 'RAPPI*RAPPI COLOMBIA', '72,500.00', '0,0000', '00,0000', '29,969.44', '0.00', '1/1']
+  - ['R06284', '31/12/2024', 'DLO*RAPPI', '64,350.00', '0,0000', '00,0000', '64,350.00', '0.00', '1/1']
+  - ['R02173', '30/12/2024', 'DLO*RAPPI', '37,650.00', '', '', '0.00', '0.00', '1/1']
+  - ['', '', '', '', '', '', '', '', '']
