@@ -75,6 +75,6 @@ def reconstruct_tables(raw_json_path: str, output_md_path: str) -> None:
 # Main event loop calling
 if __name__ == "__main__":
     
-    raw_json_path = r"experiments\Data Extraction\Amazon Textract\Tools Usage\Tests\Tables & Forms (Same Call)\01 exp output\raw_textract_response.json"
-    output_md_path = r"experiments\Data Extraction\Amazon Textract\Tools Usage\Tests\Tables & Forms (Same Call)\02 exp output\output.md"
+    raw_json_path = r"experiments\data extraction\amazon textract\tests\tables & forms (same call)\01 exp output\raw_result.json"
+    output_md_path = r"experiments\data extraction\amazon textract\tests\tables & forms (same call)\02 exp output\output.md"
     reconstruct_tables(raw_json_path, output_md_path)

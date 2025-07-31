@@ -67,7 +67,7 @@ def analyze_document(s3_uri: str) -> List[Dict[str, Any]]:
 
 
     # Save raw JSON
-    raw_json_path = r"experiments\Data Extraction\Amazon Textract\Tools Usage\Tests\Tables, Forms & Layout Parsing\01 exp output\raw_result.json"
+    raw_json_path = r"experiments\data extraction\amazon textract\tests\tables & forms (same call)\01 exp output\raw_json.json"    
     with open(raw_json_path, "w", encoding="utf-8") as f:
         json.dump(pages, f, ensure_ascii=False, indent=2)
     print("Raw Textract JSON saved to raw_textract_response.json")
@@ -159,11 +159,11 @@ if __name__ == "__main__":
     sequence = build_reading_order(pages)
 
     # Save sequence JSON
-    out_json = r"experiments\Data Extraction\Amazon Textract\Tools Usage\Tests\Tables, Forms & Layout Parsing\01 exp output\result.json"
+    out_json = r"experiments\data extraction\amazon textract\tests\tables & forms (same call)\01 exp output\result.json" 
     with open(out_json, "w", encoding="utf-8") as f:
         json.dump(sequence, f, ensure_ascii=False, indent=2)
     print("Document sequence saved to document_sequence.json")
 
     # Save Markdown preview
-    md_out_path = r"experiments\Data Extraction\Amazon Textract\Tools Usage\Tests\Tables, Forms & Layout Parsing\01 exp output\result.md"
+    md_out_path = r"experiments\data extraction\amazon textract\tests\tables & forms (same call)\01 exp output\result.md"   
     create_markdown(sequence, md_out_path)
