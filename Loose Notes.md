@@ -3,46 +3,17 @@
 
 ## Next:
 
-- Work on the currency identification heuristics. →  Document in the PJ Logbook.
-    * "ESTADO DE CUENTA EN: DOLARES" y "ESTADO DE CUENTA EN: PESOS" para diferenciar las tablas.
-    * El nombre del usuario. →  Para almacenar el modelo de datos para la entidad "EXTRACTO" definido.
-    * El ID del producto. →  Para almacenar el modelo de datos para la entidad "EXTRACTO" definido.
-
-
-        1. Comparar los JSON que se recibe de "TABLES" y de "DOCUMENTS" para ver si el actual de "TABLES" nos sirve para conseguir:
-            - "ESTADO DE CUENTA EN: DOLARES" → Textract "FORMS".
-            - "ESTADO DE CUENTA EN: PESOS" → Textract "FORMS".
-            - "bill_owner" → Textract "FORMS".
-            - "product_id" → Textract "FORMS".
-            - "bill_date" → Textract "FORMS". 
-
-            - ID del extracto →  Textract aún no trae un decodificador de Barcodes, el único rastro de ID del extracto es, en el nombre del documento: Para "Extracto_774507892_202501_TARJETA_MASTERCARD_3667", el ID del extracto sería "774507892".
-                * Una alternativa es armar un ID de extracto con la combinación de "bill_owner"+"fecha"+"producto", para no depender de las políticas de nomenclatura de BANCOLOMBIA.
-             
-            - "product_id" → Textract si tiene como conseguir esto (Posiblemente con "FORMS") pero, nos podemos ahorrar ese pedazo del parsing igual que con el ID del extracto: Con en el nombre del documento: Para "Extracto_774507892_202501_TARJETA_MASTERCARD_3667", el ID del producto sería "TARJETA_MASTERCARD_3667".
-
-            - Fecha del extracto → Textract si tiene como conseguir esto (Posiblemente con "FORMS") pero, nos podemos ahorrar ese pedazo del parsing igual que con el ID del extracto: Con en el nombre del documento: Para "Extracto_774507892_202501_TARJETA_MASTERCARD_3667", el ID del producto sería "202501" con el formato "AAAAMM".
-
-                **Pregunta filosófica:** Ahorrarnos ahora estos pedazos del parsing puede implicar luego un dolor de cabeza, porque si BANCOLOMBIA su convención de nombres, vamos a tener que tocar el código para ahí sí hacer el parsing.
-
-
-            **Bill Data Model Field Source Definition**
-            - `user_owner`: The user authenticated owning it's own base → Currently will be a `<user_placeholder>` until Authentication is implemented
-            - `bill_id` → Built post processing from `bill_owner` + `bill_owner`+`bill_date`
-            - `bill_owner` → Textract "FORMS".
-            - `product_id` → Textract "FORMS".
-            - `bill_date` → Textract "FORMS".
-            - `bill_original_name` → pdf file name.
-            - `s3_bill_name` → is it necessary?.
-
-
-
-
-
+- Correct the parsing logic.
+    * Review upstream how the recent learning change the current modules process.
+        - The bill should be uploaded with its regular name, and when updating, if already in existance, it should validates whether replace it or work with the current.
+    * Build the test for the extraction → The pytest fixture is the `unified_bill_payload.json` from the '02 ... different calls' experiment.
+    * Adjust the extraction logic accordingly.
 
 - Work on the E-R Diagram and the Data model.
 
-- Work on the JSON retention policy: How to make sure we erase the JSON after the CC Bill is added to the DB? -> Document in the PJ Logbook.
+- Work on the JSON retention policy: How to make sure we erase the JSON after the CC Bill is added to the DB?
+    * Never actually save them in the first place. It is being saved now because it's necessary to test separately that the modules are running,
+    but in the orchestration logic, there is no need to save them, only having them in memory while the data is parsed.
 
 - Move everything to pytesting. → After Phase 1 is finished.
 

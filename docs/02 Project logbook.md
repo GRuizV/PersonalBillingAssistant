@@ -220,12 +220,12 @@ We needed to validate whether a single Textract call using both `TABLES` and `FO
 1. **Combined `TABLES+FORMS` call**  
    - Correctly extracted non-tabular metadata (currency markers, bill owner, product ID, billing dates) via `FORMS`.  
    - **However**, expense tables were corrupted:  
-     - Some cells were split into `LINE` blocks.  
-     - One table was partially reconstructed, mixing tabular and line-level data.
+    - Some cells were split into `LINE` blocks.  
+    - One table was partially reconstructed, mixing tabular and line-level data.
 
 2. **Raw JSON table reconstruction from combined job**  
-   - Attempted to rebuild tables directly from `TABLE` blocks only.  
-   - **Confirmed the corruption persisted**; tables were **incomplete** compared to the ground truth.
+  - Attempted to rebuild tables directly from `TABLE` blocks only.  
+  - **Confirmed the corruption persisted**; tables were **incomplete** compared to the ground truth.
 
 **Key Learnings:**  
 - **Currency markers and metadata** are reliably extracted with `FORMS`.  
@@ -260,5 +260,125 @@ We needed to validate whether a single Textract call using both `TABLES` and `FO
 - Document and validate the final currency assignment heuristic with additional ground truth cases.  
 
 
+### 📅 [2025-07-31] – Finalized Two-Call Textract Strategy and Unified Parser (02 exp)
+
+**Executive Summary:**  
+A single Textract call with `["FORMS","TABLES"]` corrupted table detection.
+
+We split processing into two separate calls and built dedicated parsers, producing a clean unified schema and improving data accuracy by fixing KV parsing logic (global block map approach).
+
+---
+
+**Context:**  
+Following previous findings that combining Textract `["FORMS","TABLES"]` in one call corrupts table detection, we designed and implemented a two-step approach:
+1. `FORMS` job → Extract metadata (bill owner, card product ID, billing period, currency markers).  
+2. `TABLES` job → Extract clean expense tables.
+
+**Experiments & Results:**  
+- Built and tested independent parsers:
+
+/
+
+**FORMS parser**:
+  - Extracts:
+    - `bill_owner`: Filters out address-containing variants of `SEÑOR (A):` and picks the most frequent name-only value.
+    - `product_id`: Uses KV pairs for the last 4 digits and detects the card network (VISA, MASTERCARD, AMERICAN EXPRESS, DISCOVER) from all text blocks, appending it to the product ID.
+    - `bill_date`: Extracted from the `Hasta:` field.
+    - `currency_markers`: Converted to dictionary `{ page -> marker }`, reflecting one currency per page.
+      
+**TABLES parser**:
+  - Reconstructs all tables into normalized 2D arrays, each tagged with its page.
+
+/
+
+- Implemented a **unified payload builder** that merges FORMS and TABLES data into one schema:
+```json
+{
+  "bill_owner": "string",
+  "product_id": "string",
+  "bill_date": "string",
+  "currency_markers": { "page": "currency" },
+  "tables": [ { "page": int, "content": [[...]] } ]
+}
+```
+
+**Key Learnings:**
+
+* Splitting Textract calls by function (FORMS vs TABLES) ensures table integrity while retaining KV-based metadata.
+* currency_markers as a dictionary simplifies mapping currencies to tables (page-to-page mapping).
+* An heuristic cleanup is required:
+  * To avoid address noise in bill_owner.
+  * To recover card network information that may not appear in KV pairs.
+
+**Decisions:**
+
+* Continue using two separate Textract jobs and dedicated parsers.
+* Maintain the final unified schema for all downstream integrations.
+* Document and keep the card network and owner name heuristics as part of production logic (subject to template changes).
+
+--- 
+
+## Working with KV Pairs from Textract FORMS – Key Lessons
+
+**Decision Rationale:**
+
+We initially tried parsing FORMS data page by page, but discovered that relationships can span across page block sets, causing missing KV pairs. The solution was to build one global block map and process KV pairs across all pages.
+
+**Why the initial parsing missed data?**
+
+- Textract output is page-oriented, returning an array of pages, each containing its own blocks.
+
+- In the first parsing attempt, we iterated page by page, building a fresh **block_map** for each page and only processing **KEY_VALUE_SET** blocks within that subset.
+
+- Some **KEY_VALUE_SET** blocks rely on relationships that can span across other blocks or require the global block map to resolve properly.
+
+**Result:** some KV pairs (like the repeated **"ESTADO DE CUENTA EN:"** entries) were skipped because they weren’t fully captured when processing page by page.
+
+/
+
+**Correct approach to parse KV pairs**
+
+* Build one global block_map:
+  * Combine all blocks from all pages into a single dictionary keyed by Id.
+  * This ensures every relationship reference (e.g., VALUE → WORD) can be resolved.
+
+* Process all KEY_VALUE_SET blocks globally: 
+  * loop through every block in the global map.
+
+* Identify those with:
+```python
+  block["BlockType"] == "KEY_VALUE_SET" and "KEY" in block.get("EntityTypes", [])
+```
+
+* For each, retrieve:
+
+  * Key text → Traverse its CHILD relationships.
+  * Value text → Follow VALUE relationship(s) to the corresponding VALUE block(s) and traverse their children.
+  * Page → Use block["Page"] to know which page the KV pair belongs to.
+
+* Save results with all attributes:
+
+  * Store key, value, page, and an optional "source": "KV" tag.
+/
+
+* Example structure:
+```json
+{
+  "key": "ESTADO DE CUENTA EN:",
+  "value": "DOLARES",
+  "page": 1,
+  "source": "KV"
+}
+```
+
+#### Why this works better
+
+- By using a global map, all relationships between blocks can be resolved regardless of how Textract groups them internally.
+- It avoids partial parsing that can miss KV pairs repeated across pages or linked in non-standard layouts.
+- It produces a complete, page-aware dataset, essential for downstream logic like linking currency markers to tables.
+
+**Key takeaway:** Always build one global block map and process all KEY_VALUE_SET blocks globally when extracting key-value pairs from Textract FORMS output.
+
+This guarantees completeness and consistency, especially for documents with repeating keys or multi-page templates.
 
 
