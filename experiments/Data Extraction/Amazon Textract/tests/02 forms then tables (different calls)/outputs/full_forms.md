@@ -1,0 +1,121 @@
+## Textract FORMS JSON Inspection with Positions
+
+### Block Type Counts
+- **PAGE**: 4
+- **LINE**: 1253
+- **WORD**: 1955
+- **KEY_VALUE_SET**: 224
+
+### Key-Value Pairs (with positions)
+- **Saldo en mora**: 0.00
+- **Intereses corrientes**: 1.49
+- **Saldo a favor**: 0.00
+- **NIT:**: 890.903.938-8
+- **AÑO**:  
+- **SEÑOR (A):**: JUAN SEBASTIAN RUIZ VILLA CL 1 B OES 4 OES 200 AP 802 SANTIAGO DEL CALI VALLE
+- **Hasta:**: 30/01/2025
+- **Pagos total**: 689.00
+- **CHEQUE**:  
+- **NIT:**: 890.903.938-8 
+- **Pago mínimo**: 21.00 
+- **Cupo Total**: $ 14,000,000.00 
+- **Saldo anterior**: 2,165.50
+- **DÍA**: 
+- **BANCO**: 
+- **VALOR**: 
+- **NÚMERO**: 
+- **+ Intereses de mora**: 0.00 
+- **+ Cuota avances**: 0.00 
+- **Pague antes de**: 17/02/2025 
+- **Compras del mes**: 853.34 
+- **Cupo de Avances**: $ 14,000,000.00 
+- **ESTADO DE CUENTA EN:**: DOLARES 
+- **MES**:  
+- **+ Cuota compras anteriores**: 
+- **+ Intereses corrientes**: 1.49 
+- **Otros cargos**: 0.00 
+- **Disponible Avances**: $ 3,489,559.70
+- **SEÑOR (A):**: JUAN SEBASTIAN RUIZ VILLA
+- **Valor Pagado**:
+- **Desde:**: 30/12/2024
+- **Saldo a favor**: 0.00
+- **Pagos abonos**: 2,331.60
+- **Avance Internacional**: 1,8646% 24,8186%
+- **Disponible Total**: $ 3,489,559.70
+- **CUPÓN DE PAGO EN:**: DOLARES
+- **+ Avances**: 0.00 0.5541, 0.3505)
+- **EFECTIVO**:  0.1489, 0.5362)
+- **Pag.**: 1/2 0.9823, 0.8819)
+- **Mora**: 1,8646% 24,8186% 0.5670, 0.0726)
+- **+ Intereses de mora**: 0.00 0.5377, 0.3507)
+- **+ Otros cargos**: 0.00 0.5638, 0.3504)
+- **TARJETA:**: 3667 0.2334, 0.5414)
+- **Tarjeta:**: 3667 0.0957, 0.7231)
+- **+ Cuota compras del mes**: 19.12 0.5288, 0.6861)
+- **Compra Internacional**: 1,8646% 24,8186% 0.5491, 0.0728)
+- **Otros cargos: Este valor incluye los siguientes conceptos:**: Comisión avance, cuota de manejo, IVA por reexpedición, GMF y cobro por reexpedición 0.6065, 0.0374)
+- **NIT:**: 890.903.938-8 0.0616, 0.0677)
+- **Periodo facturado desde:**: 30/12/2024 0.0755, 0.5424)
+- **hasta:**: 30/01/2025 0.0757, 0.7835)
+- **ESTADO DE CUENTA EN:**: DOLARES 0.0818, 0.1466)
+- **Pag.**: 2/2 0.9823, 0.8819)
+- **SEÑOR (A):**: JUAN SEBASTIAN RUIZ VILLA 0.0367, 0.5422)
+- **Tarjeta:**: 3667 0.0568, 0.5422)
+- **Saldo en mora**: 0.00 0.5198, 0.6855)
+- **+ Intereses corrientes**: 1,182.27 0.5464, 0.3505)
+- **NIT:**: 890.903.938-8 0.2419, 0.0603)
+- **AÑO**:  0.1041, 0.5497)
+- **SEÑOR (A):**: JUAN SEBASTIAN RUIZ VILLA CL 1 B OES 4 OES 200 AP 802 SANTIAGO DEL CALI VALLE 0.0899, 0.0368)
+- **Mora**: 1,8646% 24,8186% 0.5843, 0.0725)
+- **Hasta:**: 30/01/2025 0.4406, 0.8167)
+- **Pagos total**: 7,620,805.00 0.5909, 0.3594)
+- **CHEQUE**:  0.1487, 0.5990)
+- **NIT:**: 890.903.938-8 0.0615, 0.0674)
+- **Pago mínimo**: 7,620,805.00 0.5909, 0.6854)
+- **Cupo Total**: $ 14,000,000.00 0.4239, 0.1218)
+- **Saldo anterior**: 3,191,669.44 0.5197, 0.3505)
+- **DÍA**:  0.1035, 0.6772)
+- **BANCO**:  0.1488, 0.6672)
+- **VALOR**:  0.1324, 0.8778)
+- **NÚMERO**:  0.1484, 0.7431)
+- **+ Intereses de mora**: 0.00 0.5379, 0.6862)
+- **+ Cuota avances**: 0.00 0.5552, 0.6856)
+- **Pague antes de**: 17/02/2025 0.4559, 0.5879)
+- **Cupo de Avances**: $ 14,000,000.00 0.4240, 0.3424)
+- **ESTADO DE CUENTA EN:**: PESOS 0.2587, 0.2204)
+- **MES**:  0.1045, 0.6123)
+- **+ Cuota compras anteriores**: 0.00 0.5727, 0.6861)
+- **Impuestos**: 1,8646% 24,8186% 0.5667, 0.0729)
+- **+ Intereses corrientes**: 1,182.27 0.5462, 0.6856)
+- **Otros cargos**: 48,490.00 0.5642, 0.6933)
+- **Disponible Avances**: $ 3,489,559.70 0.4557, 0.3346)
+- **SEÑOR (A):**: JUAN SEBASTIAN RUIZ VILLA 0.2204, 0.5421)
+- **Valor Pagado**:  0.4559, 0.8162)
+- **Saldo a favor**: 0.00 0.5821, 0.6925)
+- **Desde:**: 30/12/2024 0.4405, 0.5764)
+- **Compra un mes**: 0,0000% 0,0000% 0.5491, 0.0729)
+- **Saldo a favor**: 0.00 0.5815, 0.3509)
+- **Pagos abonos**: 3,271,850.00 0.5732, 0.3570)
+- **Disponible Total**: $ 3,489,559.70 0.4557, 0.1060)
+- **CUPÓN DE PAGO EN:**: PESOS 0.0215, 0.5304)
+- **+ Avances**: 0.00 0.5543, 0.3505)
+- **EFECTIVO**:  0.1488, 0.5361)
+- **Pag.**: 1/2 0.9823, 0.8819)
+- **Avances**: 1,8646% 24,8186% 0.5755, 0.0729)
+- **+ Intereses de mora**: 0.00 0.5377, 0.3506)
+- **+ Otros cargos**: 48,490.00 0.5639, 0.3504)
+- **TARJETA:**: 3667 0.2334, 0.5414)
+- **+ Compras del mes**: 7,651,313.00 0.5289, 0.3507)
+- **Tarjeta:**: 3667 0.0957, 0.7231)
+- **Compra 2 36 meses**: 1,8646% 24,8186% 0.5580, 0.0731)
+- **Tasas de interés vigente**: M.V. E.A. 0.5023, 0.1055)
+- **+ Cuota compras del mes**: 7,571,132.44 0.5287, 0.6861)
+- **Otros cargos: Este valor incluye los siguientes conceptos:**: Comisión avance, cuota de manejo, IVA por reexpedición, GMF y cobro por reexpedición 0.6065, 0.0372)
+- **NIT:**: 890.903.938-8 0.0615, 0.0677)
+- **Periodo facturado desde:**: 30/12/2024 0.0756, 0.5424)
+- **hasta:**: 30/01/2025 0.0758, 0.7836)
+- **ESTADO DE CUENTA EN:**: PESOS 0.0816, 0.1466)
+- **Pag.**: 2/2 0.9823, 0.8818)
+- **SEÑOR (A):**: JUAN SEBASTIAN RUIZ VILLA 0.0368, 0.5423)
+- **Tarjeta:**: 3667 0.0567, 0.5420)
+- **P11**: Medellin;Tel6043561225-018000522622 0.9665, 0.6213)

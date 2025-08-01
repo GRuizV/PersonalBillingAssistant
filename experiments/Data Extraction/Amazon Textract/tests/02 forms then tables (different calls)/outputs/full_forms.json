@@ -1,0 +1,1130 @@
+{
+  "found_pairs": [
+    {
+      "key": "Saldo en mora",
+      "value": "0.00",
+      "position": {
+        "top": 0.5198740363121033,
+        "left": 0.6855167150497437
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Intereses corrientes",
+      "value": "1.49",
+      "position": {
+        "top": 0.5463685989379883,
+        "left": 0.35949182510375977
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Saldo a favor",
+      "value": "0.00",
+      "position": {
+        "top": 0.5820774435997009,
+        "left": 0.6924992203712463
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "NIT:",
+      "value": "890.903.938-8",
+      "position": {
+        "top": 0.24195098876953125,
+        "left": 0.06029286980628967
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "AÑO",
+      "value": "",
+      "position": {
+        "top": 0.10406923294067383,
+        "left": 0.5497084856033325
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "SEÑOR (A):",
+      "value": "JUAN SEBASTIAN RUIZ VILLA CL 1 B OES 4 OES 200 AP 802 SANTIAGO DEL CALI VALLE",
+      "position": {
+        "top": 0.08988411724567413,
+        "left": 0.03676753118634224
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Hasta:",
+      "value": "30/01/2025",
+      "position": {
+        "top": 0.4406092166900635,
+        "left": 0.8167001605033875
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Pagos total",
+      "value": "689.00",
+      "position": {
+        "top": 0.5909475088119507,
+        "left": 0.3594396710395813
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "CHEQUE",
+      "value": "",
+      "position": {
+        "top": 0.14876142144203186,
+        "left": 0.5989986658096313
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "NIT:",
+      "value": "890.903.938-8",
+      "position": {
+        "top": 0.061559852212667465,
+        "left": 0.06743887066841125
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Pago mínimo",
+      "value": "21.00",
+      "position": {
+        "top": 0.5909274816513062,
+        "left": 0.6942873597145081
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Cupo Total",
+      "value": "$ 14,000,000.00",
+      "position": {
+        "top": 0.42394497990608215,
+        "left": 0.12177953869104385
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Saldo anterior",
+      "value": "2,165.50",
+      "position": {
+        "top": 0.5197437405586243,
+        "left": 0.35052183270454407
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "DÍA",
+      "value": "",
+      "position": {
+        "top": 0.10355687141418457,
+        "left": 0.6772401332855225
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "BANCO",
+      "value": "",
+      "position": {
+        "top": 0.1487671136856079,
+        "left": 0.6671649217605591
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "VALOR",
+      "value": "",
+      "position": {
+        "top": 0.1323728710412979,
+        "left": 0.8778511881828308
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "NÚMERO",
+      "value": "",
+      "position": {
+        "top": 0.1484188437461853,
+        "left": 0.7430837750434875
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Intereses de mora",
+      "value": "0.00",
+      "position": {
+        "top": 0.5380312204360962,
+        "left": 0.6861651539802551
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Cuota avances",
+      "value": "0.00",
+      "position": {
+        "top": 0.5552785396575928,
+        "left": 0.6855983734130859
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Pague antes de",
+      "value": "17/02/2025",
+      "position": {
+        "top": 0.45590728521347046,
+        "left": 0.5878897309303284
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Compras del mes",
+      "value": "853.34",
+      "position": {
+        "top": 0.5288662314414978,
+        "left": 0.3604312539100647
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Cupo de Avances",
+      "value": "$ 14,000,000.00",
+      "position": {
+        "top": 0.42403489351272583,
+        "left": 0.3423997759819031
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "ESTADO DE CUENTA EN:",
+      "value": "DOLARES",
+      "position": {
+        "top": 0.2587161660194397,
+        "left": 0.22041982412338257
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "MES",
+      "value": "",
+      "position": {
+        "top": 0.10451114177703857,
+        "left": 0.6123415231704712
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Cuota compras anteriores",
+      "value": "0.00",
+      "position": {
+        "top": 0.5728327035903931,
+        "left": 0.6861318945884705
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Intereses corrientes",
+      "value": "1.49",
+      "position": {
+        "top": 0.5464601516723633,
+        "left": 0.6856040954589844
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Otros cargos",
+      "value": "0.00",
+      "position": {
+        "top": 0.5649545788764954,
+        "left": 0.6934679746627808
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Disponible Avances",
+      "value": "$ 3,489,559.70",
+      "position": {
+        "top": 0.45568206906318665,
+        "left": 0.33462879061698914
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "SEÑOR (A):",
+      "value": "JUAN SEBASTIAN RUIZ VILLA",
+      "position": {
+        "top": 0.22038082778453827,
+        "left": 0.5421469807624817
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Valor Pagado",
+      "value": "",
+      "position": {
+        "top": 0.4558848738670349,
+        "left": 0.8161605596542358
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Desde:",
+      "value": "30/12/2024",
+      "position": {
+        "top": 0.440509170293808,
+        "left": 0.5763824582099915
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Saldo a favor",
+      "value": "0.00",
+      "position": {
+        "top": 0.5814644694328308,
+        "left": 0.3511292636394501
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Pagos abonos",
+      "value": "2,331.60",
+      "position": {
+        "top": 0.5731682181358337,
+        "left": 0.356937050819397
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Avance Internacional",
+      "value": "1,8646% 24,8186%",
+      "position": {
+        "top": 0.5580204725265503,
+        "left": 0.072761170566082
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Disponible Total",
+      "value": "$ 3,489,559.70",
+      "position": {
+        "top": 0.45572513341903687,
+        "left": 0.10600116848945618
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "CUPÓN DE PAGO EN:",
+      "value": "DOLARES",
+      "position": {
+        "top": 0.02152259461581707,
+        "left": 0.5304685235023499
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Avances",
+      "value": "0.00",
+      "position": {
+        "top": 0.5540884733200073,
+        "left": 0.3504972755908966
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "EFECTIVO",
+      "value": "",
+      "position": {
+        "top": 0.1488550752401352,
+        "left": 0.5361511707305908
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Pag.",
+      "value": "1/2",
+      "position": {
+        "top": 0.982279896736145,
+        "left": 0.8819272518157959
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Mora",
+      "value": "1,8646% 24,8186%",
+      "position": {
+        "top": 0.5670155882835388,
+        "left": 0.07255281507968903
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Intereses de mora",
+      "value": "0.00",
+      "position": {
+        "top": 0.5377412438392639,
+        "left": 0.35074061155319214
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Otros cargos",
+      "value": "0.00",
+      "position": {
+        "top": 0.5638339519500732,
+        "left": 0.35042205452919006
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "TARJETA:",
+      "value": "3667",
+      "position": {
+        "top": 0.23344482481479645,
+        "left": 0.5414360165596008
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Tarjeta:",
+      "value": "3667",
+      "position": {
+        "top": 0.09572853147983551,
+        "left": 0.7231063842773438
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "+ Cuota compras del mes",
+      "value": "19.12",
+      "position": {
+        "top": 0.5287737250328064,
+        "left": 0.6860882043838501
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Compra Internacional",
+      "value": "1,8646% 24,8186%",
+      "position": {
+        "top": 0.5491182208061218,
+        "left": 0.07284385710954666
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "Otros cargos: Este valor incluye los siguientes conceptos:",
+      "value": "Comisión avance, cuota de manejo, IVA por reexpedición, GMF y cobro por reexpedición",
+      "position": {
+        "top": 0.6065213084220886,
+        "left": 0.03735858574509621
+      },
+      "page": 1,
+      "source": "KV"
+    },
+    {
+      "key": "NIT:",
+      "value": "890.903.938-8",
+      "position": {
+        "top": 0.06155196204781532,
+        "left": 0.06766820698976517
+      },
+      "page": 2,
+      "source": "KV"
+    },
+    {
+      "key": "Periodo facturado desde:",
+      "value": "30/12/2024",
+      "position": {
+        "top": 0.07552339881658554,
+        "left": 0.5423663854598999
+      },
+      "page": 2,
+      "source": "KV"
+    },
+    {
+      "key": "hasta:",
+      "value": "30/01/2025",
+      "position": {
+        "top": 0.07574710994958878,
+        "left": 0.7835441827774048
+      },
+      "page": 2,
+      "source": "KV"
+    },
+    {
+      "key": "ESTADO DE CUENTA EN:",
+      "value": "DOLARES",
+      "position": {
+        "top": 0.0818396583199501,
+        "left": 0.14664869010448456
+      },
+      "page": 2,
+      "source": "KV"
+    },
+    {
+      "key": "Pag.",
+      "value": "2/2",
+      "position": {
+        "top": 0.9823406934738159,
+        "left": 0.8818506002426147
+      },
+      "page": 2,
+      "source": "KV"
+    },
+    {
+      "key": "SEÑOR (A):",
+      "value": "JUAN SEBASTIAN RUIZ VILLA",
+      "position": {
+        "top": 0.0366743803024292,
+        "left": 0.5422120690345764
+      },
+      "page": 2,
+      "source": "KV"
+    },
+    {
+      "key": "Tarjeta:",
+      "value": "3667",
+      "position": {
+        "top": 0.056801293045282364,
+        "left": 0.5421951413154602
+      },
+      "page": 2,
+      "source": "KV"
+    },
+    {
+      "key": "Saldo en mora",
+      "value": "0.00",
+      "position": {
+        "top": 0.5198323726654053,
+        "left": 0.685490071773529
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Intereses corrientes",
+      "value": "1,182.27",
+      "position": {
+        "top": 0.546400785446167,
+        "left": 0.3505092263221741
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "NIT:",
+      "value": "890.903.938-8",
+      "position": {
+        "top": 0.24193769693374634,
+        "left": 0.06028584763407707
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "AÑO",
+      "value": "",
+      "position": {
+        "top": 0.10405739396810532,
+        "left": 0.5496834516525269
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "SEÑOR (A):",
+      "value": "JUAN SEBASTIAN RUIZ VILLA CL 1 B OES 4 OES 200 AP 802 SANTIAGO DEL CALI VALLE",
+      "position": {
+        "top": 0.0898870900273323,
+        "left": 0.03676620498299599
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Mora",
+      "value": "1,8646% 24,8186%",
+      "position": {
+        "top": 0.5843186378479004,
+        "left": 0.07248064130544662
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Hasta:",
+      "value": "30/01/2025",
+      "position": {
+        "top": 0.44058457016944885,
+        "left": 0.8166674971580505
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Pagos total",
+      "value": "7,620,805.00",
+      "position": {
+        "top": 0.5908948183059692,
+        "left": 0.35936954617500305
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "CHEQUE",
+      "value": "",
+      "position": {
+        "top": 0.14874087274074554,
+        "left": 0.5989828109741211
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "NIT:",
+      "value": "890.903.938-8",
+      "position": {
+        "top": 0.061541490256786346,
+        "left": 0.06743653118610382
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Pago mínimo",
+      "value": "7,620,805.00",
+      "position": {
+        "top": 0.5908865332603455,
+        "left": 0.6853634715080261
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Cupo Total",
+      "value": "$ 14,000,000.00",
+      "position": {
+        "top": 0.42394280433654785,
+        "left": 0.12179843336343765
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Saldo anterior",
+      "value": "3,191,669.44",
+      "position": {
+        "top": 0.5197361707687378,
+        "left": 0.35045325756073
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "DÍA",
+      "value": "",
+      "position": {
+        "top": 0.10354498773813248,
+        "left": 0.6772348284721375
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "BANCO",
+      "value": "",
+      "position": {
+        "top": 0.14875729382038116,
+        "left": 0.6671646237373352
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "VALOR",
+      "value": "",
+      "position": {
+        "top": 0.13235892355442047,
+        "left": 0.877833902835846
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "NÚMERO",
+      "value": "",
+      "position": {
+        "top": 0.14840708673000336,
+        "left": 0.7430856227874756
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Intereses de mora",
+      "value": "0.00",
+      "position": {
+        "top": 0.537942111492157,
+        "left": 0.6862165927886963
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Cuota avances",
+      "value": "0.00",
+      "position": {
+        "top": 0.5552285313606262,
+        "left": 0.6856040954589844
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Pague antes de",
+      "value": "17/02/2025",
+      "position": {
+        "top": 0.45587584376335144,
+        "left": 0.5878804326057434
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Cupo de Avances",
+      "value": "$ 14,000,000.00",
+      "position": {
+        "top": 0.42401519417762756,
+        "left": 0.34240543842315674
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "ESTADO DE CUENTA EN:",
+      "value": "PESOS",
+      "position": {
+        "top": 0.2586979568004608,
+        "left": 0.2203884869813919
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "MES",
+      "value": "",
+      "position": {
+        "top": 0.10450337827205658,
+        "left": 0.6123226881027222
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Cuota compras anteriores",
+      "value": "0.00",
+      "position": {
+        "top": 0.5727236866950989,
+        "left": 0.6861019730567932
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Impuestos",
+      "value": "1,8646% 24,8186%",
+      "position": {
+        "top": 0.5667487382888794,
+        "left": 0.07289643585681915
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Intereses corrientes",
+      "value": "1,182.27",
+      "position": {
+        "top": 0.5462249517440796,
+        "left": 0.6856357455253601
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Otros cargos",
+      "value": "48,490.00",
+      "position": {
+        "top": 0.5641976594924927,
+        "left": 0.6932525038719177
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Disponible Avances",
+      "value": "$ 3,489,559.70",
+      "position": {
+        "top": 0.45565634965896606,
+        "left": 0.33461761474609375
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "SEÑOR (A):",
+      "value": "JUAN SEBASTIAN RUIZ VILLA",
+      "position": {
+        "top": 0.22036848962306976,
+        "left": 0.5421383380889893
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Valor Pagado",
+      "value": "",
+      "position": {
+        "top": 0.45585015416145325,
+        "left": 0.8161538243293762
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Saldo a favor",
+      "value": "0.00",
+      "position": {
+        "top": 0.5821083188056946,
+        "left": 0.6925229430198669
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Desde:",
+      "value": "30/12/2024",
+      "position": {
+        "top": 0.4404911696910858,
+        "left": 0.576377272605896
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Compra un mes",
+      "value": "0,0000% 0,0000%",
+      "position": {
+        "top": 0.5491140484809875,
+        "left": 0.07289819419384003
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Saldo a favor",
+      "value": "0.00",
+      "position": {
+        "top": 0.5814598202705383,
+        "left": 0.3509306311607361
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Pagos abonos",
+      "value": "3,271,850.00",
+      "position": {
+        "top": 0.5731590986251831,
+        "left": 0.35700076818466187
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Disponible Total",
+      "value": "$ 3,489,559.70",
+      "position": {
+        "top": 0.4557134211063385,
+        "left": 0.10597973316907883
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "CUPÓN DE PAGO EN:",
+      "value": "PESOS",
+      "position": {
+        "top": 0.021454475820064545,
+        "left": 0.530437707901001
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Avances",
+      "value": "0.00",
+      "position": {
+        "top": 0.554326593875885,
+        "left": 0.35049930214881897
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "EFECTIVO",
+      "value": "",
+      "position": {
+        "top": 0.14884178340435028,
+        "left": 0.5361146330833435
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Pag.",
+      "value": "1/2",
+      "position": {
+        "top": 0.9822811484336853,
+        "left": 0.8819314241409302
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Avances",
+      "value": "1,8646% 24,8186%",
+      "position": {
+        "top": 0.5754736065864563,
+        "left": 0.07289555668830872
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Intereses de mora",
+      "value": "0.00",
+      "position": {
+        "top": 0.5377194881439209,
+        "left": 0.3506421744823456
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Otros cargos",
+      "value": "48,490.00",
+      "position": {
+        "top": 0.5638508796691895,
+        "left": 0.35037827491760254
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "TARJETA:",
+      "value": "3667",
+      "position": {
+        "top": 0.23341678082942963,
+        "left": 0.541440486907959
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Compras del mes",
+      "value": "7,651,313.00",
+      "position": {
+        "top": 0.5288709998130798,
+        "left": 0.350729376077652
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Tarjeta:",
+      "value": "3667",
+      "position": {
+        "top": 0.09571134299039841,
+        "left": 0.7231149673461914
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Compra 2 36 meses",
+      "value": "1,8646% 24,8186%",
+      "position": {
+        "top": 0.5580348372459412,
+        "left": 0.07305477559566498
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Tasas de interés vigente",
+      "value": "M.V. E.A.",
+      "position": {
+        "top": 0.5022841691970825,
+        "left": 0.10549082607030869
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "+ Cuota compras del mes",
+      "value": "7,571,132.44",
+      "position": {
+        "top": 0.528737485408783,
+        "left": 0.6861258149147034
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "Otros cargos: Este valor incluye los siguientes conceptos:",
+      "value": "Comisión avance, cuota de manejo, IVA por reexpedición, GMF y cobro por reexpedición",
+      "position": {
+        "top": 0.6065136790275574,
+        "left": 0.03723561018705368
+      },
+      "page": 3,
+      "source": "KV"
+    },
+    {
+      "key": "NIT:",
+      "value": "890.903.938-8",
+      "position": {
+        "top": 0.06152939051389694,
+        "left": 0.06772305816411972
+      },
+      "page": 4,
+      "source": "KV"
+    },
+    {
+      "key": "Periodo facturado desde:",
+      "value": "30/12/2024",
+      "position": {
+        "top": 0.07557321339845657,
+        "left": 0.5423900485038757
+      },
+      "page": 4,
+      "source": "KV"
+    },
+    {
+      "key": "hasta:",
+      "value": "30/01/2025",
+      "position": {
+        "top": 0.07577703893184662,
+        "left": 0.7836084961891174
+      },
+      "page": 4,
+      "source": "KV"
+    },
+    {
+      "key": "ESTADO DE CUENTA EN:",
+      "value": "PESOS",
+      "position": {
+        "top": 0.08160148561000824,
+        "left": 0.1466071903705597
+      },
+      "page": 4,
+      "source": "KV"
+    },
+    {
+      "key": "Pag.",
+      "value": "2/2",
+      "position": {
+        "top": 0.9823122620582581,
+        "left": 0.8818444609642029
+      },
+      "page": 4,
+      "source": "KV"
+    },
+    {
+      "key": "SEÑOR (A):",
+      "value": "JUAN SEBASTIAN RUIZ VILLA",
+      "position": {
+        "top": 0.036830879747867584,
+        "left": 0.542273998260498
+      },
+      "page": 4,
+      "source": "KV"
+    },
+    {
+      "key": "Tarjeta:",
+      "value": "3667",
+      "position": {
+        "top": 0.05669095739722252,
+        "left": 0.5420207381248474
+      },
+      "page": 4,
+      "source": "KV"
+    },
+    {
+      "key": "P11",
+      "value": "Medellin;Tel6043561225-018000522622",
+      "position": {
+        "top": 0.9664781093597412,
+        "left": 0.6212844848632812
+      },
+      "page": 4,
+      "source": "KV"
+    }
+  ],
+  "summary": {
+    "PAGE": 4,
+    "LINE": 1253,
+    "WORD": 1955,
+    "KEY_VALUE_SET": 224
+  }
+}
