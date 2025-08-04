@@ -53,7 +53,9 @@
 
 #### Tasks
 - [ ] Create WhatsApp notifier module in `src/notifications/whatsapp.py`
+    * Update `upload_to_s3.py` to prompt the user via whatsapp whether to replace an existing bill if found in S3 and rerun the process.
 - [ ] Integrate with Lambda trigger logic (or simulate locally)
+    * Implement a middleware data cleaner to comply with data retention policy (90 days).
 
 ---
 

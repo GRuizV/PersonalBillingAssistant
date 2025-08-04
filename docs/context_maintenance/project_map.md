@@ -4,36 +4,59 @@
 ├── 📄 LICENSE
 ├── 📄 Loose Notes.md
 ├── 📄 README.md
+├── 📄 pytest.ini
+├── 📄 requirements.txt
+├── 📄 routes.txt
+├── 📁 audit
+│   └── 📁 logs
 ├── 📁 config
 │   └── 📄 bill_templates.json
 ├── 📁 data
-│   ├── 📄 ground truth total.md
-│   ├── 📄 ground_truth.json
+│   ├── 📁 ground_truth
+│   │   ├── 📄 ground truth total.md
+│   │   └── 📄 ground_truth.json
 │   ├── 📁 input_pdfs
-│   │   └── "Testing PDFs for app working"
+│   │   ├── 📁 Bancolombia
+│   │   │   ├── 📁 MC
+│   │   │   └── 📁 VS
+│   │   ├── 📁 Locked Bancolombia
+│   │   └── 📁 Unlocked Bancolombia
+│   │       └── 📁 Textract Response
 │   └── 📁 textract_output
 │       ├── 📄 2025-07-22_1035_cb23bdf6_BC - MC - 02 - FEB-2025.pdf.json
-│       ├── 📄 UI_analyzeDocResponse.json
 │       └── 📄 textract parsed tables (BC - MC - 02 - FEB-2025).md
 ├── 📁 docs
 │   ├── 📄 00 Project Overview.md
 │   ├── 📄 01 Development Plan & Milestones.md
-│   ├── 📄 02 Project logbook.md
+│   ├── 📄 02 Project Logbook.md
+│   ├── 📄 03 Data Retention & Management Policy.md
 │   ├── 📁 architecture
-│   │   ├── 📄 2025.07.17 - Architecture Diagram.drawio.xml
-│   │   ├── 📄 2025.07.18 - Architecture Diagram.PNG
-│   │   └── 📁 preliminar files
-│   │       ├── 📄 2025.06.03 - Draft de Arquitectura.md
-│   │       └── 📄 2025.06.03 - First Architecture Draft.jfif
+│   │   ├── 📁 00 preliminar files
+│   │   │   ├── 📄 2025.06.03 - Draft de Arquitectura.md
+│   │   │   └── 📄 2025.06.03 - First Architecture Draft.jfif
+│   │   ├── 📁 architecture diagram
+│   │   │   ├── 📄 2025.07.17 - Architecture Diagram.drawio.xml
+│   │   │   └── 📄 2025.07.18 - Architecture Diagram.PNG
+│   │   └── 📁 data model
+│   │       └── 📄 preliminary data model notes.md
 │   └── 📁 context_maintenance
 │       ├── 📄 context_handover_model.md
+│       ├── 📄 dev_partner_prompt_chatgpt.md
+│       ├── 📄 files_structure_generator_v2.py
+│       ├── 📄 project_map.md
 │       ├── 📄 session_handover_template.md
 │       └── 📁 sessions
 │           └── 📄 2025-07-25_handover.md
 ├── 📁 experiments
-│   └── "Old experiments from the early stages of the project"
-├── 📄 requirements.txt
-├── 📄 routes.txt
+│   └── 📁 data extraction
+│       ├── 📁 amazon textract
+│       │   ├── 📁 history
+│       │   ├── 📁 tests
+│       │   │   ├── 📁 00 initial tables parsing
+│       │   │   ├── 📁 01 tables & forms (same call)
+│       │   │   └── 📁 02 forms then tables (different calls)
+│       │   └── 📁 tool usage
+│       └── 📁 manual extraction
 ├── 📁 src
 │   ├── 📁 core
 │   │   └── 📄 extract_expenses.py
@@ -46,23 +69,56 @@
 │       ├── 📄 parse_textract_output.py
 │       └── 📄 trigger_textract.py
 └── 📁 tests
-    ├── 📁 extraction_testing_data
-    │   ├── 📄 BC - MC - 02 - FEB - 2025 - Ground Truth.xlsx
-    │   ├── 📄 extraction_ground_truth.json
-    │   ├── 📁 extraction_test_results
-    │   │   └── 📄 extracted.json
-    │   └── 📄 ground_truth_data_extraction.py
+    ├── 📄 00 pytest migration plan.md
+    ├── 📄 conftest.py
+    ├── 📁 fixtures
+    │   └── 📁 extraction
+    │       ├── 📄 BC - MC - 02 - FEB - 2025 - Ground Truth.xlsx
+    │       ├── 📄 extraction_ground_truth.json
+    │       ├── 📁 extraction_test_results
+    │       │   └── 📄 extracted.json
+    │       └── 📄 ground_truth_data_extraction.py
     ├── 📄 test_extract_expenses.py
     ├── 📄 test_parser.py
     ├── 📄 test_textract.py
     ├── 📄 test_upload.py
-    └── 📄 test_validation_expenses.py
+    └── 📄 test_validate_expenses.py
 
 
 
-## Modules Index
+## Modules & Config Index
+
+
+### config
+
+- bill_templates.json: # Contains the configuration for current's Bancolombia cc bill format and future new card issuers/bill template so the app is extensive
+
+    * schema:
+        {
+            "bill_templates": {
+                
+                "template_version": {
+                    "headers": [strs],   # headers that will identify which table to collect expenses from
+                    "fields_to_extract": [strs], # The columns collected from the tables of interest
+                    "currency_split": {dicts}   # rules to identify which expenses currency from a captured table
+                    },
+                    
+                    "exclude_descriptions": [strs] # Which expenses descriptions to exclude from the collection
+                }
+        }
+
+
+### context maintenance/
+- files_structure_generator_v2.py:
+    * format_arg(arg) -> None  # Format argument with its type annotation if present.
+    * extract_functions_and_methods(file_path) -> None  # Extract the functions, methods and their docstrings if present in the python file.
+    * generate_markdown_tree(start_path, output_dir) -> None  # Creates the result markdown file with project's structure and functions description.
+
+
+### src/
 
 - extract_expenses.py:  # Extract and transforms the data collected from textract into two expenses buckets (Foreing & Domestic) for one CC Bill.
+
     * load_template(template_name: str) -> dict # Loads 'bill_templates.json' that contains the configuration for a specific Card-Issuer/Bill-Template.
     * normalize_value(value: str) -> str # Strips string fields collected from trailing or leading whitespaces.
     * parse_amount(value: str) -> float  # Convert amount string to float, keeping negatives as negatives.
@@ -88,7 +144,15 @@
 - trigger_textract.py:  # Initiates a textract asynchronous job to process one CC Bill.
     * run_textract_analysis(s3_key: str, save_to: str, poll_interval: int) -> dict  # Asynchronously analyzes a PDF in S3 using Textract's start_document_analysis.
 
+
+### tests/
+
 - ground_truth_data_extraction.py # File to manually get the verified ground truth data for testing purposes
+
+- conftest.py: # Pytest config file
+    * ground_truth_data() -> None  # Fixture: Load ground truth expense data for validation tests.
+    * sample_tables() -> None  # Fixture: Load sample table data as parsed from Textract output JSON.
+    * bancolombia_tables() -> None  # Fixture: Load parsed tables for a known Bancolombia CC bill (Feb 2025).
 
 - test_extract_expenses.py # Test extract_expenses.py
 
@@ -100,18 +164,3 @@
 
 - test_validation_expenses.py: # Tests precision, recall and accuracy from the transformed data derived from extract_expenses.py vs the ground truth
 
-- bill_templates.json: # Contains the configuration for current's Bancolombia cc bill format and future new card issuers/bill template so the app is extensive
-    * schema:
-        {
-            "bill_templates": {
-                
-                "template_version": {
-                    "headers": [strs],   # headers that will identify which table to collect expenses from
-                    "fields_to_extract": [strs], # The columns collected from the tables of interest
-                    "currency_split": {dicts}   # rules to identify which expenses currency from a captured table
-                    },
-                    
-                    "exclude_descriptions": [strs] # Which expenses descriptions to exclude from the collection
-                }
-        }
-        

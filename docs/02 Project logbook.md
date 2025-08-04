@@ -318,67 +318,88 @@ Following previous findings that combining Textract `["FORMS","TABLES"]` in one 
 
 --- 
 
-## Working with KV Pairs from Textract FORMS – Key Lessons
+  #### Working with KV Pairs from Textract FORMS – Key Lessons
 
-**Decision Rationale:**
+  **Broader Summary:** When parsing data from textract in "FORMS" job, rebuild the block globally, not per page because it leaves out KV-pairs not bound to a specific page. 
 
-We initially tried parsing FORMS data page by page, but discovered that relationships can span across page block sets, causing missing KV pairs. The solution was to build one global block map and process KV pairs across all pages.
+  ---
 
-**Why the initial parsing missed data?**
+  **Decision Rationale:**
 
-- Textract output is page-oriented, returning an array of pages, each containing its own blocks.
+  We initially tried parsing FORMS data page by page, but discovered that relationships can span across page block sets, causing missing KV pairs. The solution was to build one global block map and process KV pairs across all pages.
 
-- In the first parsing attempt, we iterated page by page, building a fresh **block_map** for each page and only processing **KEY_VALUE_SET** blocks within that subset.
+  **Why the initial parsing missed data?**
 
-- Some **KEY_VALUE_SET** blocks rely on relationships that can span across other blocks or require the global block map to resolve properly.
+  - Textract output is page-oriented, returning an array of pages, each containing its own blocks.
 
-**Result:** some KV pairs (like the repeated **"ESTADO DE CUENTA EN:"** entries) were skipped because they weren’t fully captured when processing page by page.
+  - In the first parsing attempt, we iterated page by page, building a fresh **block_map** for each page and only processing **KEY_VALUE_SET** blocks within that subset.
 
-/
+  - Some **KEY_VALUE_SET** blocks rely on relationships that can span across other blocks or require the global block map to resolve properly.
 
-**Correct approach to parse KV pairs**
+  **Result:** some KV pairs (like the repeated **"ESTADO DE CUENTA EN:"** entries) were skipped because they weren’t fully captured when processing page by page.
 
-* Build one global block_map:
-  * Combine all blocks from all pages into a single dictionary keyed by Id.
-  * This ensures every relationship reference (e.g., VALUE → WORD) can be resolved.
+  /
 
-* Process all KEY_VALUE_SET blocks globally: 
-  * loop through every block in the global map.
+  **Correct approach to parse KV pairs**
 
-* Identify those with:
-```python
-  block["BlockType"] == "KEY_VALUE_SET" and "KEY" in block.get("EntityTypes", [])
-```
+  * Build one global block_map:
+    * Combine all blocks from all pages into a single dictionary keyed by Id.
+    * This ensures every relationship reference (e.g., VALUE → WORD) can be resolved.
 
-* For each, retrieve:
+  * Process all KEY_VALUE_SET blocks globally: 
+    * loop through every block in the global map.
 
-  * Key text → Traverse its CHILD relationships.
-  * Value text → Follow VALUE relationship(s) to the corresponding VALUE block(s) and traverse their children.
-  * Page → Use block["Page"] to know which page the KV pair belongs to.
+  * Identify those with:
+  ```python
+    block["BlockType"] == "KEY_VALUE_SET" and "KEY" in block.get("EntityTypes", [])
+  ```
 
-* Save results with all attributes:
+  * For each, retrieve:
 
-  * Store key, value, page, and an optional "source": "KV" tag.
-/
+    * Key text → Traverse its CHILD relationships.
+    * Value text → Follow VALUE relationship(s) to the corresponding VALUE block(s) and traverse their children.
+    * Page → Use block["Page"] to know which page the KV pair belongs to.
 
-* Example structure:
-```json
-{
-  "key": "ESTADO DE CUENTA EN:",
-  "value": "DOLARES",
-  "page": 1,
-  "source": "KV"
-}
-```
+  * Save results with all attributes:
 
-#### Why this works better
+    * Store key, value, page, and an optional "source": "KV" tag.
+  /
 
-- By using a global map, all relationships between blocks can be resolved regardless of how Textract groups them internally.
-- It avoids partial parsing that can miss KV pairs repeated across pages or linked in non-standard layouts.
-- It produces a complete, page-aware dataset, essential for downstream logic like linking currency markers to tables.
+  * Example structure:
+  ```json
+  {
+    "key": "ESTADO DE CUENTA EN:",
+    "value": "DOLARES",
+    "page": 1,
+    "source": "KV"
+  }
+  ```
 
-**Key takeaway:** Always build one global block map and process all KEY_VALUE_SET blocks globally when extracting key-value pairs from Textract FORMS output.
+  #### Why this works better
 
-This guarantees completeness and consistency, especially for documents with repeating keys or multi-page templates.
+  - By using a global map, all relationships between blocks can be resolved regardless of how Textract groups them internally.
+  - It avoids partial parsing that can miss KV pairs repeated across pages or linked in non-standard layouts.
+  - It produces a complete, page-aware dataset, essential for downstream logic like linking currency markers to tables.
 
+  **Key takeaway:** Always build one global block map and process all KEY_VALUE_SET blocks globally when extracting key-value pairs from Textract FORMS output.
+
+  This guarantees completeness and consistency, especially for documents with repeating keys or multi-page templates.
+
+.
+
+
+
+## August
+
+### 📅 [2025-08-04] – ...
+
+**Context:** ...
+
+**Options Considered:**
+- ...
+
+**Decision:** ...
+
+**Rationale:**
+- ...
 

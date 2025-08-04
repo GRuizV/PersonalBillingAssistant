@@ -70,31 +70,33 @@ LLMs will handle:
 ## 📁 Repo Structure
 
     📁 PBA/
+    ├── 📁 audit        # ephemeral pipeline outputs
+    │   └── 📁 logs
     ├── 📁 config
     │   └── 📄 bill_templates.json
-    ├── 📁 data
-    │   └── 📁 textract_output
+    ├── 📁 data     # static reference data
+    │   ├── 📁 ground_truth     # curated expected results (manual validation)
+    │   └── 📁 textract_output      # saved sample Textract JSON (for offline tests)
     ├── 📁 docs
     │   ├── 📄 00 Project Overview.md
     │   ├── 📄 01 Development Plan & Milestones.md
     │   ├── 📄 02 Project logbook.md
+    │   ├── 📄 03 Data Retention & Management Policy.md
     │   ├── 📁 architecture
-    │   │   ├── 📄 2025.07.17 - Architecture Diagram.drawio.xml
-    │   │   ├── 📄 2025.07.18 - Architecture Diagram.PNG
-    │   │   └── 📁 preliminar files
-    │   └── 📁 context_maintenance
-    ├── 📁 experiments
-    │   └── "Old experiments from the early stages of the project"
-    ├── 📄 requirements.txt
-    ├── 📁 src
+    │   │   ├── 📁 preliminar files
+    │   │   ├── 📁 architecture diagram
+    │   │   └── 📁 data model
+    │   └── 📁 context_maintenance      # Methodology to work with AI asistance en mantain context
+    ├── 📁 experiments      # To dry run hypothesis and functionalities
+    ├── 📁 src      # main app code
     │   ├── 📁 core
     │   ├── 📁 db
     │   ├── 📁 ingestion
     │   ├── 📁 llm_interference
     │   ├── 📁 notifications
     │   └── 📁 textract
-    └── 📁 tests
-        └── 📁 extraction_testing_data
+    └── 📁 tests        # test code and fixtures
+        └── 📁 fixtures     # test-only input data (small, focused)
 
 
 ## ⚙️ Tech Stack
