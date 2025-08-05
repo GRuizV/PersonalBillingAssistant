@@ -42,6 +42,7 @@ s3_client = boto3.client(
 
 
 
+
 @pytest.fixture
 def sample_pdf(tmp_path):
 
@@ -54,13 +55,15 @@ def sample_pdf(tmp_path):
     return str(pdf_path)
 
 
-
 def test_upload_new_file(sample_pdf, monkeypatch):
     """
-    Upload a file that doesn't exist in S3 and confirm upload occurs.
+    Upload a file that doesn't exist in S3 and confirm upload occurs
+    under the specified test prefix.
     """
 
-    s3_key = "test_uploads/sample.pdf"
+    # Sample definition
+    prefix = "test_uploads"
+    s3_key = f"{prefix}/sample.pdf"
 
     # Remove file from S3 if exists
     try:
@@ -68,56 +71,72 @@ def test_upload_new_file(sample_pdf, monkeypatch):
     except ClientError:
         pass
 
-    # Simulate user input (no duplicate, so no prompt)
-    monkeypatch.setattr("builtins.input", lambda _: "replace")
+    # Call upload_file with test-specific prefix
+    result = upload_file(sample_pdf, prefix=prefix)
 
-
-    # Force upload destination to be under test_uploads/
-    # (hardcode by copying to temp path with same name)
-    import shutil
-    temp_test_path = sample_pdf
-    result = upload_file(temp_test_path)
-
-
+    # Assert the file retrieved by the function is the same set initially
     assert result == "sample.pdf"
 
-    # Verify file exists in S3 under test_uploads/
-    response = s3_client.list_objects_v2(Bucket=S3_BUCKET, Prefix="test_uploads/")
+    # Verify file exists in S3 under test prefix
+    response = s3_client.list_objects_v2(Bucket=S3_BUCKET, Prefix=prefix + "/")
     assert "Contents" in response
     assert any(obj["Key"] == s3_key for obj in response["Contents"])
 
 
-# def test_upload_duplicate_ignore(sample_pdf, monkeypatch):
-#     """
-#     Upload a duplicate and choose to ignore.
-#     """
-#     # Ensure file exists in S3 first
-#     s3_client.upload_file(sample_pdf, S3_BUCKET, "sample.pdf")
+def test_upload_duplicate_ignore(sample_pdf, monkeypatch):
+    """
+    Upload a duplicate and choose to ignore.
+    """
 
-#     # Simulate user choosing "ignore"
-#     monkeypatch.setattr("builtins.input", lambda _: "ignore")
+    # Sample definition
+    prefix = "test_uploads"
+    s3_key = f"{prefix}/sample.pdf"
 
-#     result = upload_file(sample_pdf)
-#     assert result == "sample.pdf"
+    # Ensure file already exists in S3 first
+    s3_client.upload_file(sample_pdf, S3_BUCKET, s3_key)
 
-#     # Confirm no new upload (S3 version unchanged, verified implicitly)
+    # Simulate user choosing "ignore"
+    monkeypatch.setattr("builtins.input", lambda _: "ignore")
 
-# def test_upload_duplicate_replace(sample_pdf, monkeypatch):
-#     """
-#     Upload a duplicate and choose to replace.
-#     """
-#     # Ensure file exists in S3 first
-#     s3_client.upload_file(sample_pdf, S3_BUCKET, "sample.pdf")
+    # Call upload_file (should detect duplicate and skip)
+    result = upload_file(sample_pdf, prefix=prefix)
 
-#     # Simulate user choosing "replace"
-#     monkeypatch.setattr("builtins.input", lambda _: "replace")
+     # Assert the file retrieved by the function is the same set initially
+    assert result == "sample.pdf"
 
-#     result = upload_file(sample_pdf)
-#     assert result == "sample.pdf"
+    # Confirm object still exists (implicitly unchanged)
+    response = s3_client.list_objects_v2(Bucket=S3_BUCKET, Prefix=prefix + "/")
+    assert "Contents" in response
+    assert any(obj["Key"] == s3_key for obj in response["Contents"])
 
-#     # Confirm upload went through (S3 still has file)
-#     response = s3_client.list_objects_v2(Bucket=S3_BUCKET, Prefix="sample.pdf")
-#     assert "Contents" in response and any(obj["Key"] == "sample.pdf" for obj in response["Contents"])
+
+def test_upload_duplicate_replace(sample_pdf, monkeypatch):
+    """
+    Upload a duplicate file and choose to replace it.
+    """
+
+    # Sample definition
+    prefix = "test_uploads"
+    s3_key = f"{prefix}/sample.pdf"
+
+    # Ensure file already exists in S3 first
+    s3_client.upload_file(sample_pdf, S3_BUCKET, s3_key)
+
+    # Simulate user choosing "replace"
+    monkeypatch.setattr("builtins.input", lambda _: "replace")
+
+    # Call upload_file (should detect duplicate and overwrite)
+    result = upload_file(sample_pdf, prefix=prefix)
+
+     # Assert the file retrieved by the function is the same set initially
+    assert result == "sample.pdf"
+
+    # Confirm object still exists after replacement
+    response = s3_client.list_objects_v2(Bucket=S3_BUCKET, Prefix=prefix + "/")
+    assert "Contents" in response
+    assert any(obj["Key"] == s3_key for obj in response["Contents"])
+
+
 
 
 # Manual runner
@@ -128,7 +147,8 @@ if __name__ == "__main__":
     Adjust file_path to point to a real PDF before running.
     """
 
-    file_path = "data\input_pdfs\Bancolombia\MC\Extracto_774507892_202501_TARJETA_MASTERCARD_3667.pdf"
+    file_path = r"data\input_pdfs\Bancolombia\MC\Extracto_774507892_202501_TARJETA_MASTERCARD_3667.pdf"
+    
     if not os.path.exists(file_path):
         print(f"❌ File not found: {file_path}")
         sys.exit(1)

@@ -6,7 +6,7 @@ import os
 import pytest
 
 # Local imports
-from src.textract.parse_textract_output import parse_textract_file
+from pba.textract.parse_textract_output import parse_textract_file
 
 
 
