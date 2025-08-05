@@ -73,30 +73,20 @@ LLMs will handle:
     ├── 📁 audit        # ephemeral pipeline outputs
     │   └── 📁 logs
     ├── 📁 config
-    │   └── 📄 bill_templates.json
     ├── 📁 data     # static reference data
-    │   ├── 📁 ground_truth     # curated expected results (manual validation)
-    │   └── 📁 textract_output      # saved sample Textract JSON (for offline tests)
     ├── 📁 docs
-    │   ├── 📄 00 Project Overview.md
-    │   ├── 📄 01 Development Plan & Milestones.md
-    │   ├── 📄 02 Project logbook.md
-    │   ├── 📄 03 Data Retention & Management Policy.md
     │   ├── 📁 architecture
-    │   │   ├── 📁 preliminar files
-    │   │   ├── 📁 architecture diagram
-    │   │   └── 📁 data model
     │   └── 📁 context_maintenance      # Methodology to work with AI asistance en mantain context
     ├── 📁 experiments      # To dry run hypothesis and functionalities
     ├── 📁 src      # main app code
-    │   ├── 📁 core
-    │   ├── 📁 db
-    │   ├── 📁 ingestion
-    │   ├── 📁 llm_interference
-    │   ├── 📁 notifications
-    │   └── 📁 textract
+    │   └── 📁 pba           # importable package (`from pba.* import ...`)
+    │       ├── 📁 core
+    │       ├── 📁 db
+    │       ├── 📁 ingestion
+    │       ├── 📁 llm_interference
+    │       ├── 📁 notifications
+    │       └── 📁 textract
     └── 📁 tests        # test code and fixtures
-        └── 📁 fixtures     # test-only input data (small, focused)
 
 
 ## ⚙️ Tech Stack
@@ -116,24 +106,32 @@ LLMs will handle:
 # Install dependencies
 pip install -r requirements.txt
 
+# Enable local imports (once per environment)
+pip install -e .
+
 # Load .env with AWS credentials and bucket
 export $(cat .env | xargs)
 
-# Upload a PDF
-python -m tests.test_upload
-More orchestration scripts coming soon.
+# Run a test file (example)
+python tests/test_upload.py
 ```
+
+
+## Adding New Bill Templates
+
+The application supports parsing multiple bill formats using template configurations.  
+To add a new template, see [docs/templates.md](docs/templates.md) for schema documentation and step-by-step instructions.
+
+
 
 ---
 
 ## ✍️ Contributions & Philosophy
 This repo is designed to support both human engineers and LLM agents in parallel:
 
-Modular + testable
-
-Ground truth–driven validation
-
-Ready for LLM-based automation
+* Modular + testable
+* Ground truth–driven validation
+* Ready for LLM-based automation
 
 _This README is provisional and will evolve with the project. For full vision and progress, refer to the logbook and dev plan._
 
