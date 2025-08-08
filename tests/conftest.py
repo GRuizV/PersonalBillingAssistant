@@ -1,74 +1,199 @@
 # Bultin imports
 import json
-import os
+from pathlib import Path
 
 # Third-party imports
 import pytest
 
-# Local imports
-from pba.textract.parse_textract_output import parse_textract_file
 
 
+
+# -----------------------------------------------------------------------------
+# Shared paths (adjust if you relocate fixtures)
+# -----------------------------------------------------------------------------
+TEXTRACT_JSON_PATH = Path("tests/fixtures/textract_response.json")
+TEMPLATE_PATH = Path("config/bill_templates.json")
+TEMPLATE_NAME = "bancolombia_v1"
+
+
+
+
+# -----------------------------------------------------------------------------
+# Generic / cross-module fixtures
+# -----------------------------------------------------------------------------
+@pytest.fixture
+def sample_pdf(tmp_path):
+
+    """
+    Creates a temporary, minimal PDF-like file for tests that need a local PDF path.
+    Returns a string path to avoid surprising Path/str mismatches in call sites.
+    """
+
+    pdf_dir = tmp_path
+    pdf_path = pdf_dir / "sample.pdf"
+    pdf_path.write_bytes(b"%PDF-1.4 fake content")
+
+    return str(pdf_path)
+
+
+@pytest.fixture(scope="session")
+def bill_original_name() -> str:
+    """Canonical filename used across parser-related tests."""
+    return "Extracto_774507892_202501_TARJETA_MASTERCARD_3667.pdf"
+
+
+
+
+# -----------------------------------------------------------------------------
+# Textract trigger fakes (used by trigger_textract tests)
+# -----------------------------------------------------------------------------
+
+@pytest.fixture(scope="session")
+def fake_forms_blocks():
+    """Minimal FORMS blocks to simulate a successful response page."""
+    return [{"BlockType": "KEY_VALUE_SET", "Id": "1", "Page": 1}]
+
+
+@pytest.fixture(scope="session")
+def fake_tables_blocks():
+    """Minimal TABLE block to simulate a successful response page."""
+    return [{"BlockType": "TABLE", "Id": "2", "Page": 1}]
+
+
+@pytest.fixture(scope="session")
+def fake_start_document_analysis():
+    """
+    Fake textract.start_document_analysis that returns distinct JobIds based on FeatureTypes.
+    """
+    def _impl(DocumentLocation, FeatureTypes):
+        if "FORMS" in FeatureTypes:
+            return {"JobId": "forms-job-id"}
+        if "TABLES" in FeatureTypes:
+            return {"JobId": "tables-job-id"}
+        raise ValueError("Unexpected FeatureTypes")
+    return _impl
+
+
+@pytest.fixture(scope="session")
+def fake_get_document_analysis_success(fake_forms_blocks, fake_tables_blocks):
+    """
+    Always returns SUCCEEDED with a single page of blocks.
+    """
+    def _impl(JobId, NextToken=None):
+        blocks = fake_forms_blocks if JobId == "forms-job-id" else fake_tables_blocks
+        return {"JobStatus": "SUCCEEDED", "Blocks": blocks, "DocumentMetadata": {"Pages": 1}}
+    return _impl
+
+
+@pytest.fixture(scope="session")
+def fake_get_document_analysis_paginated(fake_forms_blocks, fake_tables_blocks):
+    """
+    First call returns NextToken to simulate pagination; second call ends the stream.
+    """
+    def _impl(JobId, NextToken=None):
+        blocks = fake_forms_blocks if JobId == "forms-job-id" else fake_tables_blocks
+        if NextToken is None:
+            return {
+                "JobStatus": "SUCCEEDED",
+                "Blocks": blocks,
+                "DocumentMetadata": {"Pages": 1},
+                "NextToken": "token-1",
+            }
+        return {"JobStatus": "SUCCEEDED", "Blocks": blocks, "DocumentMetadata": {"Pages": 1}}
+    return _impl
+
+
+@pytest.fixture(scope="session")
+def fake_get_document_analysis_failed():
+    """Always returns FAILED to exercise error handling."""
+    def _impl(JobId, NextToken=None):
+        return {"JobStatus": "FAILED"}
+    return _impl
 
 
 @pytest.fixture
-def ground_truth_data():
+def patch_textract(monkeypatch, fake_start_document_analysis):
     """
-    Fixture: Load ground truth expense data for validation tests.
+    Helper to patch both textract calls in one go.
 
-    Returns:
-        dict: {
-            "expenses": [  # unified expense list
-                {
-                    "currency": "USD" | "COP",
-                    "authorization_number": str,
-                    "transaction_date": str (YYYY-MM-DD),
-                    "description": str,
-                    "original_amount": float,
-                    "charges_and_credits": float,
-                    "deferred_balance": float,
-                    "installments": str
-                },
-                ...
-            ]
-        }
+    Usage in tests:
+        patch_textract(get_impl=fake_get_document_analysis_success)
+        patch_textract(get_impl=fake_get_document_analysis_paginated)
+        patch_textract(get_impl=fake_get_document_analysis_failed)
     """
-    path = os.path.join(
-        os.path.dirname(__file__),
-        "extraction_testing_data",
-        "extraction_ground_truth.json"
-    )
-    if not os.path.exists(path):
-        pytest.skip(f"Missing ground truth data file: {path}")
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    def _apply(get_impl):
+        monkeypatch.setattr(
+            "pba.textract.trigger_textract.textract.start_document_analysis",
+            fake_start_document_analysis
+        )
+        monkeypatch.setattr(
+            "pba.textract.trigger_textract.textract.get_document_analysis",
+            get_impl
+        )
+    return _apply
 
 
-@pytest.fixture
-def sample_tables():
+
+# -----------------------------------------------------------------------------
+# Parser fixtures (used by parse_textract_output tests)
+# -----------------------------------------------------------------------------
+@pytest.fixture(scope="session")
+def _textract_fixture_json() -> dict:
     """
-    Fixture: Load sample table data as parsed from Textract output JSON.
-
-    Returns:
-        list: List of tables (list of lists) representing one processed bill's raw table output.
+    Load the frozen dual Textract response once for the session.
+    Provides fast, deterministic unit tests independent of audit/.
     """
-    path = os.path.join(
-        os.path.dirname(__file__),
-        "extraction_testing_data",
-        "extraction_test_results",
-        "extracted.json"
-    )
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    if not TEXTRACT_JSON_PATH.exists():
+        raise FileNotFoundError(
+            f"Missing test fixture: {TEXTRACT_JSON_PATH} "
+            f"(Did you copy a working textract_response.json into tests/fixtures/?)"
+        )
+    return json.loads(TEXTRACT_JSON_PATH.read_text(encoding="utf-8"))
 
 
-@pytest.fixture
-def bancolombia_tables():
+@pytest.fixture(scope="session")
+def textract_forms(_textract_fixture_json) -> dict:
+    """The 'forms' section from the frozen Textract fixture."""
+    return _textract_fixture_json["forms"]
 
-    """Fixture: Load parsed tables for a known Bancolombia CC bill (Feb 2025)."""
 
-    input_path = "data/textract_output/2025-07-22_1035_cb23bdf6_BC - MC - 02 - FEB-2025.pdf.json"
+@pytest.fixture(scope="session")
+def textract_tables(_textract_fixture_json) -> dict:
+    """The 'tables' section from the frozen Textract fixture."""
+    return _textract_fixture_json["tables"]
+
+
+@pytest.fixture(scope="session")
+def bill_template() -> dict:
+    """
+    Load the bancolombia_v1 template (source-of-truth config).
+    Kept in config/ rather than tests/fixtures/ by design.
+    """
+    if not TEMPLATE_PATH.exists():
+        raise FileNotFoundError(
+            f"Missing config file: {TEMPLATE_PATH} "
+            f"(Ensure you run tests from project root and the file exists.)"
+        )
+    data = json.loads(TEMPLATE_PATH.read_text(encoding="utf-8"))
+    try:
+        return data["bill_templates"][TEMPLATE_NAME]
+    except KeyError as e:
+        raise KeyError(
+            f"Template '{TEMPLATE_NAME}' not found in {TEMPLATE_PATH}. "
+            f"Available keys: {list(data.get('bill_templates', {}).keys())}"
+        ) from e
     
-    if not os.path.exists(input_path):
-        pytest.skip(f"Missing input file: {input_path}")
-    return parse_textract_file(input_path)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

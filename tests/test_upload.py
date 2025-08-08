@@ -15,7 +15,6 @@ import os
 from pba.ingestion.upload_to_s3 import upload_file
 
 # Third-party imports
-import pytest
 import boto3
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError
@@ -43,17 +42,9 @@ s3_client = boto3.client(
 
 
 
-@pytest.fixture
-def sample_pdf(tmp_path):
-
-    """Create a fake sample PDF for testing."""
-
-    pdf_dir = tmp_path
-    pdf_path = pdf_dir / "sample.pdf"
-    pdf_path.write_bytes(b"%PDF-1.4 fake content")
-
-    return str(pdf_path)
-
+# ----------------------------------------------------------------------
+# Tests
+# ----------------------------------------------------------------------
 
 def test_upload_new_file(sample_pdf, monkeypatch):
     """
