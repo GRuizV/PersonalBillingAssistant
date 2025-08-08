@@ -1,108 +1,28 @@
 # Loose Notes
 
-
-## Next:
-
-- Correct the parsing logic.
-    * Review upstream how the recent learning change the current modules process.
-        - The bill should be uploaded with its regular name, and when updating, if already in existance, it should validates whether replace it or work with the current.
-    * Build the test for the extraction → The pytest fixture is the `unified_bill_payload.json` from the '02 ... different calls' experiment.
-    * Adjust the extraction logic accordingly.
-
-
-
-
-
+---
 
 # PBA Refactor Plan – Multi-Stage Textract + Metadata Extraction
 *(Updated with duplicate policy & audit retention)*
 
----
 
-## Step 1 – `upload_to_s3.py` Review & Testing
-**Why:** Ensures proper file naming, duplicate handling, and sets the foundation for pipeline consistency.
+Check the test_trigger_textract for fixtures to simplify.
 
-### Tasks
-1. **Code Review & Enhancements**
-   - Confirm S3 naming convention (prefix/folder structure).
-   - Implement **duplicate handling policy**:
-     - If identical file exists:
-       - Prompt user via CLI:
-         - Option 1 → **Ignore** (exit process)
-         - Option 2 → **Replace & re-run pipeline**
-       - Future integration: replace CLI prompt with UI confirmation.
-   - Ensure return of `bill_original_name`.
 
-2. **Testing**
-   - Pytest:
-     - Upload new file → confirm S3 key.
-     - Upload duplicate → confirm prompt/handling.
-   - Manual runner kept for quick debugging.
+
 
 ---
 
-## Step 2 – `trigger_textract.py` Dual-Job Call
-### Tasks
-1. Call two separate Textract jobs:
-   - `FORMS` → metadata & page-level currency.
-   - `TABLES` → expense tables.
-2. Return combined response:
-   ```python
-   {
-     "forms_json": <FORMS raw JSON>,
-     "tables_json": <TABLES raw JSON>
-   }
-   ```
-3. Pytest with boto3 Stubber to validate both calls.
 
----
 
-## Step 3 – bancolombia_v1.json Template Update
-### Changes
-* Add FORMS field mapping:
 
-```json
-"forms_to_extract": {
-  "bill_owner": "Nombre del Titular",
-  "product_id": "Número de Producto",
-  "bill_date": "Fecha de Corte"
-}
-```
-Other mappings (headers, fields_to_extract, currency_split) remain unchanged.
 
----
 
-## Step 4 – parse_textract_output.py Refactor
-### Tasks
 
-1. Parse FORMS JSON using template instructions:
 
-    * Extract bill_owner, product_id, bill_date.
-    * Build currency_markers (page → currency).
 
-2. Parse TABLES JSON:
 
-    * Extract tables and link to page numbers.
 
-3. Return unified payload:
-
-```json
-{
-  "bill_original_name": "...",
-  "bill_owner": "...",
-  "product_id": "...",
-  "bill_date": "...",
-  "currency_markers": { "1": "USD", "2": "COP" },
-  "tables": [{ "page": 1, "content": [...] }]
-}
-```
-
-4. Pytest:
-
-    * Fixture with sample Textract JSON.
-    * Assert metadata and tables populated.
-
----
 
 ## Step 5 – extract_expenses.py Refactor
 ### Tasks
@@ -170,9 +90,6 @@ Other mappings (headers, fields_to_extract, currency_split) remain unchanged.
 
 ## Deliverables Summary
 
-* Updated upload_to_s3.py (duplicate policy with CLI prompt + Pytest).
-* Dual-job trigger_textract.py with tests.
-* Updated bancolombia_v1.json template.
 * Refactored parse_textract_output.py with template-driven metadata * parsing.
 * Refactored extract_expenses.py with normalized output.
 * Updated ground truth + validate_expenses.py.

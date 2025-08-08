@@ -391,15 +391,58 @@ Following previous findings that combining Textract `["FORMS","TABLES"]` in one 
 
 ## August
 
-### 📅 [2025-08-04] – ...
 
-**Context:** ...
+### 📅 [2025-08-05] – Package Setup & Import Path Fix
 
-**Options Considered:**
-- ...
+**Context:** Historically, running test files directly (via python tests/test_*.py or IDE F5) 
 
-**Decision:** ...
+required adding manual path hacks:
 
-**Rationale:**
-- ...
+```python
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+```
+This was due to Python not automatically recognizing the src/ folder as a package root.
+
+**Action Taken:**
+- Restructured project to introduce a dedicated namespace package:
+
+```
+ src/
+    └── pba/
+        ├── ingestion/
+        ├── core/
+        ├── textract/
+        └── ...
+```
+
+Added minimal setup.cfg and pyproject.toml to enable editable install.
+
+- Installed package with:
+```bash
+pip install -e .
+```
+
+- Removed tests/__init__.py to ensure tests/ is not treated as a package.
+
+- Updated imports to use the package name:
+```python
+from pba.ingestion.upload_to_s3 import upload_file
+```
+
+- Verified tests run without any sys.path.append or $PYTHONPATH hacks.
+
+
+**Impact:** 
+
+- Clean, maintainable imports across all scripts and IDE runs.
+- Scales for future modules without extra setup.
+- Simplifies team onboarding and potential CI/CD integration.
+
+
+
+
+
+
+
+
 
